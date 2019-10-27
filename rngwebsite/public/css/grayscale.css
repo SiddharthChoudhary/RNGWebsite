@@ -107,6 +107,12 @@
   -webkit-background-clip: text;
 }
 
+.color-white{
+  color: #fff;
+}
+.margin-top{
+  margin-top:10px ;
+}
 .masthead h2 {
   max-width: 20rem;
   font-size: 1rem;
@@ -162,40 +168,41 @@
   background-color: #467370 !important;
 }
 
-.about-section {
+.research-section {
+  min-height: 100% !important;
   padding-top: 10rem;
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
 
-.about-section p {
+.research-section p {
   margin-bottom: 5rem;
 }
 
-.projects-section {
+.team-section {
   padding: 10rem 0;
 }
 
-.projects-section .featured-text {
+.team-section .featured-text {
   padding: 2rem;
 }
 
 @media (min-width: 992px) {
-  .projects-section .featured-text {
+  .team-section .featured-text {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #64a19d;
   }
 }
 
-.projects-section .project-text {
+.team-section .project-text {
   padding: 3rem;
   font-size: 90%;
 }
 
 @media (min-width: 992px) {
-  .projects-section .project-text {
+  .team-section .project-text {
     padding: 5rem;
   }
-  .projects-section .project-text hr {
+  .team-section .project-text hr {
     border-color: #64a19d;
     border-width: .25rem;
     width: 30%;
@@ -222,33 +229,33 @@
   border: 0;
 }
 
-.contact-section {
+.opportunities-section {
   padding: 5rem 0 0;
 }
 
-.contact-section .card {
+.opportunities-section .card {
   border: 0;
   border-bottom: 0.25rem solid #64a19d;
 }
 
-.contact-section .card h4 {
+.opportunities-section .card h4 {
   font-size: 0.8rem;
   font-family: 'Varela Round';
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
 
-.contact-section .card hr {
+.opportunities-section .card hr {
   border-color: #64a19d;
   border-width: 0.25rem;
   width: 3rem;
 }
 
-.contact-section .social {
+.opportunities-section .social {
   margin-top: 5rem;
 }
 
-.contact-section .social a {
+.opportunities-section .social a {
   text-align: center;
   height: 3rem;
   width: 3rem;
@@ -258,11 +265,11 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-.contact-section .social a:hover {
+.opportunities-section .social a:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.contact-section .social a:active {
+.opportunities-section .social a:active {
   color: #fff;
 }
 
