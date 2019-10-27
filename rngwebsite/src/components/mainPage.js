@@ -114,7 +114,7 @@ class MainPage extends Component{
           <div class="col-xl-4 col-lg-5">
             <div class="featured-text text-center text-lg-left">
               <h4>Team</h4>
-              <p class="text-black-50 mb-0">Get the team members deatils over here</p> <Link to="/uniform">
+              <p class="text-black-50 mb-0">Get the team members deatils over here</p> <Link to="/team">
           Go to the Link
         </Link>
             </div>
