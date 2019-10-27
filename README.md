@@ -14,5 +14,4 @@ Run these steps:-
 2.) npm start
 
 That's it, and you will see that 'npm i' command installs the node modules and essential libraries and after that by running npm start
-we get the node up and running. Your terminal will redirect you to the browser's http://localhost:3000. Port number would be selected
-by the system based upon which one is available.
+we get the node up and running. Your terminal will redirect you to the browser's http://localhost:3000. Port number would be selected by the system, based upon which one is available.
