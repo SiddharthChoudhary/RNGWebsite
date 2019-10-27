@@ -8,7 +8,9 @@ Note it uses React, Node. So before runnning you should make sure that system ha
 Once you have passed that stage.
 
 Run these steps:-
+
 1.) npm i 
+
 2.) npm start
 
 That's it, and you will see that 'npm i' command installs the node modules and essential libraries and after that by running npm start
