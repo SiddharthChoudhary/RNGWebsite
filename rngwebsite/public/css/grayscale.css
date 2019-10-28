@@ -116,6 +116,10 @@
 .margin-top-100{
   margin-top:100px ;
 }
+.hm-100{
+  min-height: 100vh;
+}
+
 .masthead h2 {
   max-width: 20rem;
   font-size: 1rem;

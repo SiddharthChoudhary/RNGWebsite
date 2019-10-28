@@ -10,14 +10,15 @@ render(){
     let body;
         body = (
             <section>
-      <link href="css/grayscale.css" rel="stylesheet"/>
-
-                <div class="container">
+                <link href="css/grayscale.css" rel="stylesheet"/>
+                <div class="signup-section">
                     <div class="row">
                         <div class="col-lg-12 text-center">
-                        <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+                        <h2 class="section-heading color-white text-uppercase margin-top-100">Meet Our Amazing Team</h2>
                         </div>
                     </div>
+                </div>
+                <div class="container">
                     <div class="row margin-top-100">
                     <div class="col-sm-4">
                         <div class="team-member">
@@ -131,6 +132,11 @@ render(){
                             </div>
                         </div>
                     </div>
+                    <footer class="bg-black small text-center text-white-50">
+                        <div class="container">
+                        Copyright &copy; Your Website 2019
+                        </div>
+                    </footer>
             </section>
         )
     return body;

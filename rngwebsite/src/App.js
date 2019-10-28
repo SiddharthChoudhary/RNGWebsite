@@ -21,7 +21,6 @@ function App() {
       <Route path="/qrngCorrelated" component={QRNGCorrelated}/>
       <Route path="/linkApp" component={linkApp}/>
       <Route exact path="/listFiles" component={ListFiles}/>
-
       </div>
     </Router>
   );

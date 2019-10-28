@@ -18,7 +18,7 @@ class MainPage extends Component{
 
       <link href="css/grayscale.css" rel="stylesheet"/>
 
-
+      
       <script src="vendor/jquery/jquery.min.js"></script>
       <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
