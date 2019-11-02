@@ -6,8 +6,31 @@ class MainPage extends Component{
 
     constructor(){
         super()
+        this.state={
+          // remember to not include / in the end because I am splitting the url based on slashes to display title
+          // for the news article on the front page
+          newsReleases:[
+            'https://www.stevens.edu/news/stevens-just-switched-nations-first-campus-hybrid-quantum-communications-network',
+            'https://thestute.com/2018/03/23/taking-the-tech-out-of-the-lab-stevens-unveils-quantum-communications-network',
+            'https://www.eurekalert.org/pub_releases/2018-09/siot-sqr092518.php',
+            'https://www.stevens.edu/news/stevens-creates-truly-random-numbers-using-quantum-physics',
+            'https://www.stevens.edu/news/stevens-prototype-quantum-lock-may-foreshadow-next-super-secure-applications',
+          ]
+        }
     }
-
+    newsReleases=()=>{
+      let div=[];
+      //this index is responsible for displaying the name of the news in main dashboard page
+      for(let i in this.state.newsReleases){
+          let lastIndexInNewsUrl=this.state.newsReleases[i].split("/").length
+          div.push(
+            <li class="list-group-item">
+              <a href={this.state.newsReleases[i]}>{this.state.newsReleases[i].split("/")[lastIndexInNewsUrl-1]}</a>
+            </li>
+            )
+        }
+      return div
+    }
     render(){
         return(
     <section>
@@ -129,18 +152,7 @@ class MainPage extends Component{
             <div class="col-md-10 col-lg-8 mx-auto text-center">
               <h2 class="text-white mb-5">News</h2>
               <ul class="list-group">
-              <li class="list-group-item">
-                <h3>TITLE</h3>
-                <p>Description of the news</p>
-              </li>
-              <li class="list-group-item">
-                <h3>TITLE</h3>
-                <p>Description of the news</p>
-              </li>
-              <li class="list-group-item">
-                <h3>TITLE</h3>
-                <p>Description of the news</p>
-              </li>
+                {this.newsReleases()}
               </ul>
             </div>
           </div>
@@ -197,7 +209,7 @@ class MainPage extends Component{
       </section>
       <footer class="bg-black small text-center text-white-50">
         <div class="container">
-          Copyright &copy; Your Website 2019
+          Copyright &copy; Quest Stevens EDU 2019
         </div>
       </footer>
       </section>
