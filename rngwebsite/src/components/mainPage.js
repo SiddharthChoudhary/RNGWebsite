@@ -85,44 +85,44 @@ class MainPage extends Component{
       <section id="research" class="d-flex h-100 research-section text-center" /* style={{marginTop: '5px'}} */>
                   <Carousel>
                         <Carousel.Item>
-                        <img src="img/ipad.png" class="img-fluid" alt=""/>
+                        <img src="img/ipad.jpg" class="img-fluid" alt=""/>
                           <Carousel.Caption>
-                            <h3>First slide label</h3>
+                            <h3>Quantum biomedic imaging</h3>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/ipad.png" class="img-fluid" alt=""/>
+                        <img src="img/ipad.jpg" class="img-fluid" alt=""/>
                           <Carousel.Caption>
-                            <h3>Second slide label</h3>
+                            <h3><Link to="/qrng">Quantum random numbers</Link></h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/ipad.png" class="img-fluid" alt=""/>
+                        <img src="img/ipad.jpg" class="img-fluid" alt=""/>
                           <Carousel.Caption>
-                            <h3>Third slide label</h3>
+                            <h3>Integrated quantum photonics</h3>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/ipad.png" class="img-fluid" alt=""/>
+                        <img src="img/ipad.jpg" class="img-fluid" alt=""/>
                           <Carousel.Caption>
-                            <h3>Fourth slide label</h3>
+                            <h3>Quantum remote sensing</h3>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/ipad.png" class="img-fluid" alt=""/>
+                        <img src="img/ipad.jpg" class="img-fluid" alt=""/>
                           <Carousel.Caption>
-                            <h3>Fifth Slide label</h3>
+                            <h3>Quantum communications and IoT</h3>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/ipad.png" class="img-fluid" alt=""/>
+                        <img src="img/ipad.jpg" class="img-fluid" alt=""/>
                           <Carousel.Caption>
-                            <h3>Sixth slide label</h3>
+                            <h3>Quantum optical computing</h3>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                           </Carousel.Caption>
                         </Carousel.Item>
@@ -145,7 +145,6 @@ class MainPage extends Component{
         </div>
         </div>
       </section>
-
       <section id="news" class="signup-section">
         <div class="container">
           <div class="row">
@@ -158,7 +157,6 @@ class MainPage extends Component{
           </div>
         </div>
       </section>
-      
       <section id ="opportunities" class="opportunities-section bg-black">
         <div class="container">
       <div class="row">

@@ -8,6 +8,7 @@ import linkApp from './components/linkApp'
 import normal from './components/normal'
 import MainPage from './components/mainPage'
 import uniform from './components/uniform'
+import qrng from './components/qrng'
 import Team from './components/team'
 import ListFiles from './components/listFiles'
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Route exact path="/uniform" component={uniform}/>
       <Route exact path="/team" component={Team}/>
       <Route exact path="/normal" component={normal}/>
+      <Route exact path="/qrng" component={qrng}/>
       <Route path="/qrngCorrelated" component={QRNGCorrelated}/>
       <Route path="/linkApp" component={linkApp}/>
       <Route exact path="/listFiles" component={ListFiles}/>
