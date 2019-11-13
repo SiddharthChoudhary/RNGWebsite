@@ -10,11 +10,16 @@ class MainPage extends Component{
           // remember to not include / in the end because I am splitting the url based on slashes to display title
           // for the news article on the front page
           newsReleases:[
-            'https://www.stevens.edu/news/stevens-just-switched-nations-first-campus-hybrid-quantum-communications-network',
-            'https://thestute.com/2018/03/23/taking-the-tech-out-of-the-lab-stevens-unveils-quantum-communications-network',
-            'https://www.eurekalert.org/pub_releases/2018-09/siot-sqr092518.php',
-            'https://www.stevens.edu/news/stevens-creates-truly-random-numbers-using-quantum-physics',
-            'https://www.stevens.edu/news/stevens-prototype-quantum-lock-may-foreshadow-next-super-secure-applications',
+            {link:'https://www.stevens.edu/news/stevens-just-switched-nations-first-campus-hybrid-quantum-communications-network',
+             title:"Stevens Just Switched on the Nation's First Campus Hybrid Quantum-Communications Network"},
+            {link:'https://thestute.com/2018/03/23/taking-the-tech-out-of-the-lab-stevens-unveils-quantum-communications-network',
+             title:'Stevens unveils quantum communications network'},
+            {link:'https://www.eurekalert.org/pub_releases/2018-09/siot-sqr092518.php',
+             title:"Stevens' quantum research and education piques US interest"},
+            {link:'https://www.stevens.edu/news/stevens-creates-truly-random-numbers-using-quantum-physics',
+             title:'Stevens Creates Truly Random Numbers, Using Quantum Physics'},
+            {link:'https://www.stevens.edu/news/stevens-prototype-quantum-lock-may-foreshadow-next-super-secure-applications',
+             title:"Stevens' Prototype 'Quantum Lock' May Foreshadow the Next Super-Secure Applications"}
           ]
         }
     }
@@ -22,10 +27,10 @@ class MainPage extends Component{
       let div=[];
       //this index is responsible for displaying the name of the news in main dashboard page
       for(let i in this.state.newsReleases){
-          let lastIndexInNewsUrl=this.state.newsReleases[i].split("/").length
+          let lastIndexInNewsUrl=this.state.newsReleases[i].link.split("/").length
           div.push(
             <li class="list-group-item">
-              <a href={this.state.newsReleases[i]}>{this.state.newsReleases[i].split("/")[lastIndexInNewsUrl-1]}</a>
+              <a href={this.state.newsReleases[i].link}>{this.state.newsReleases[i].title}</a>
             </li>
             )
         }
