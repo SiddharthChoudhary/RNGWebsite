@@ -10,6 +10,8 @@ class MainPage extends Component{
           // remember to not include / in the end because I am splitting the url based on slashes to display title
           // for the news article on the front page
           newsReleases:[
+            {link:"https://phys.org/news/2019-09-team-holy-grail-room-temperature.html",
+             title:"Team closes in on 'holy grail' of room temperature quantum computing chips"},
             {link:'https://www.stevens.edu/news/stevens-just-switched-nations-first-campus-hybrid-quantum-communications-network',
              title:"Stevens Just Switched on the Nation's First Campus Hybrid Quantum-Communications Network"},
             {link:'https://thestute.com/2018/03/23/taking-the-tech-out-of-the-lab-stevens-unveils-quantum-communications-network',
@@ -53,9 +55,11 @@ class MainPage extends Component{
       <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
       <script src="js/grayscale.min.js"></script>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top background-color-transparent" id="mainNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <img class="mx-auto max-width-height-300" src={"img/logo.PNG"}></img>
+      </a>
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Quantum Generation</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -63,7 +67,7 @@ class MainPage extends Component{
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#research">Research Projects</a>
+            <a class="nav-link js-scroll-trigger nav-items" href="#research">Research Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#team">Team</a>
@@ -74,6 +78,9 @@ class MainPage extends Component{
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#opportunities">Opportunities</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -81,53 +88,53 @@ class MainPage extends Component{
       <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
               <div class="mx-auto text-center">
-                <h1 class="mx-auto my-0 text-uppercase">QUANTUM</h1>
-                <h2 class="text-white-50 mx-auto mt-2 mb-5">Download a huge stream of quantumly generated random binary stream.</h2>
+                <h1 class="mx-auto my-0 text-uppercase">quest</h1>
+                <p></p>
                 <a href="#research" class="btn btn-primary js-scroll-trigger">Get Started</a>
               </div>
             </div>
           </header>
       <section id="research" class="d-flex h-100 research-section text-center" /* style={{marginTop: '5px'}} */>
-                  <Carousel>
+                  <Carousel id="research">
                         <Carousel.Item>
-                        <img src="img/ipad.jpg" class="img-fluid" alt=""/>
+                        <img src="img/ipad.jpg" class="max-width-img-60" alt=""/>
                           <Carousel.Caption>
-                            <h3>Quantum biomedic imaging</h3>
+                            <h3><Link to="/biomedic">Quantum biomedic imaging</Link></h3>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/ipad.jpg" class="img-fluid" alt=""/>
+                        <img src="img/ipad.jpg" class="max-width-img-60" alt=""/>
                           <Carousel.Caption>
                             <h3><Link to="/qrng">Quantum random numbers</Link></h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/ipad.jpg" class="img-fluid" alt=""/>
+                        <img src="img/ipad.jpg" class="max-width-img-60" alt=""/>
                           <Carousel.Caption>
-                            <h3>Integrated quantum photonics</h3>
+                            <h3><Link to="/photonics">Integrated quantum photonics</Link></h3>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/ipad.jpg" class="img-fluid" alt=""/>
+                        <img src="img/ipad.jpg" class="max-width-img-60" alt=""/>
                           <Carousel.Caption>
                             <h3>Quantum remote sensing</h3>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/ipad.jpg" class="img-fluid" alt=""/>
+                        <img src="img/ipad.jpg" class="max-width-img-60" alt=""/>
                           <Carousel.Caption>
                             <h3>Quantum communications and IoT</h3>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/ipad.jpg" class="img-fluid" alt=""/>
+                        <img src="img/ipad.jpg" class="max-width-img-60" alt=""/>
                           <Carousel.Caption>
-                            <h3>Quantum optical computing</h3>
+                            <h3><Link to="/optical">Quantum optical computing</Link></h3>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                           </Carousel.Caption>
                         </Carousel.Item>
@@ -143,7 +150,7 @@ class MainPage extends Component{
             <div class="featured-text text-center text-lg-left">
               <h4>Team</h4>
               <p class="text-black-50 mb-0">Get the team members deatils over here</p> <Link to="/team">
-          Go to the Link
+          Visit Team Members
         </Link>
             </div>
           </div>
@@ -162,9 +169,13 @@ class MainPage extends Component{
           </div>
         </div>
       </section>
-      <section id ="opportunities" class="opportunities-section bg-black">
+      <section class="opportunities-section bg-black">
         <div class="container">
-      <div class="row">
+        <div id="about" class="row text-center justify-content-center">
+        <h2 class="text-center text-white-50">About Us</h2>
+        <p class="text-white-50 container">QuEST lab dedicates in research and development of practical quantum systems and technology that will create advantages and values for scientific and industrial communities. Our proud team consists of students and scholars with deep background in physics, optics, electronics, computer science, and son on. Through collaboration, we undertake a vastly interdisciplinary approach to quantum biomedic imaging, simulation, integrated nanophotonics, remote sensing, networking, and optical computing.</p>
+        </div>
+      <div  id ="opportunities" class="row margin-top-100">
       <div class="col-md-4 mb-3 mb-md-0">
         <div class="card py-4 h-100">
           <div class="card-body text-center">

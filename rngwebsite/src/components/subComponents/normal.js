@@ -76,7 +76,7 @@ class Normal extends Component{
                         <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-right">
                             <h4 class="text-white">Normal Distribution</h4>
-                            <p class="mb-0 text-white-50">A description explaining that how the api works and what is Uniform Distribution all about</p>
+                            <p class="mb-0 text-white-50">A description explaining that how the api works and what is Normal Distribution all about</p>
                             <hr class="d-none d-lg-block mb-0 mr-0"/>
                         </div>
                         </div>
@@ -97,7 +97,7 @@ class Normal extends Component{
                     <div class="row align-items-center no-gutters mb-4 mb-lg-5">
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                        <h4>API SYNTAX</h4> <p><Link onClick={()=>this.showModal(this.state.show)}>TryNow</Link></p>
+                        <h4>API</h4> <p><Link onClick={()=>this.showModal(this.state.show)}>TryNow</Link></p>
                         <p class="text-black-50 mb-0">http://quest.phy.stevens.edu:5050/normalDistribution</p>
                         <Modal show={this.state.show} onHide={()=>this.hideModal(this.state.show)}>
                         <Modal.Header closeButton>
