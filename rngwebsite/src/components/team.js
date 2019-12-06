@@ -17,6 +17,12 @@ class Team extends Component{
         super()
         this.state={
             teamMembers:[
+                {
+                    name:'Arwa A Algethami',
+                    email:'aalgetha@stevens.edu',
+                    image:"airybeam.png",
+                    show:false
+                },
                 {name:'Bharathwaj Muthuswamy',
                  email:'bmuthusw@stevens.edu',
                  description:'Dr. Bharathwaj "Bharath" Muthuswamy is currently training to be a Quantum Engineer, that is, study Quantum Mechanics with a focus on engineering Quantum behaviour, by working towards his second PhD in physics.\t\n\n'+
@@ -27,12 +33,7 @@ class Team extends Component{
                  image:"Bharath.jpeg",
                  show:false
                 },
-                {
-                    name:'Arwa A Algethami',
-                    email:'aalgetha@stevens.edu',
-                    image:"airybeam.png",
-                    show:false
-                },
+                
                 {
                     name:'Chao Tang', 
                     email:'ctang9@stevens.edu',
@@ -245,6 +246,37 @@ class Team extends Component{
             <section>
                 {this.teamModals()}
                 <link href="css/grayscale.css" rel="stylesheet"/>
+                <nav class="navbar navbar-expand-lg navbar-light fixed-top background-color-transparent" id="mainNav">
+                    <a class="navbar-brand js-scroll-trigger" href="/">
+                        <img class="mx-auto max-width-height-300" src={"img/logo.PNG"}></img>
+                    </a>
+                    <div class="container">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        Menu
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger nav-items" href="/#research">Research Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="/#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="/#news">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="/#opportunities">Opportunities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="/#about">About</a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+                
                 <div class="signup-section">
                     <div class="row">
                         <div class="col-lg-12 text-center">

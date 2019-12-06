@@ -19,12 +19,36 @@ class Qrng extends Component{
     // const handleShow = () => setShow(true);
     // const handleClose = () => setShow(false);
     render(){
-    let body;
-        body = (
+        let body;
+        body = (          
             <section id="qrng">
                 <link href="css/grayscale.css" rel="stylesheet"/>
+                 <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top" style={{backgroundColor:'#6557578c'}}>
+                    <a class="navbar-brand js-scroll-trigger" href="/#page-top">
+                        <img class="mx-auto max-width-height-300" src={"img/logo.PNG"}></img>
+                    </a>
+                    <div class="container">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        Menu
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger nav-items font-color-black" href="#uniform">Uniform</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger font-color-black" href="#normal">Normal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger font-color-black" href="#arbitrary">Arbitrary</a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
                     {/* <div class="row mb-5"></div> */}
-                    <div class="row bg-light padding-60">
+                    <div class="row bg-light padding-60 margin-top-100">
                             <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-left">
                                 <h1>What is Quantum Random Number Generation?</h1>
@@ -33,7 +57,7 @@ class Qrng extends Component{
                             </div>
                     </div>
                     <hr/>
-                <div class="row team-section bg-light padding-60">
+                <div class="row team-section bg-light padding-60" id="uniform">
                     <div class="row">
                             <div class="row">
                                 <h1>Uniform Distribution</h1>
@@ -53,7 +77,7 @@ class Qrng extends Component{
                     </div>
                 </div>
                 <hr/>
-                <div class="row team-section bg-light padding-60">
+                <div class="row team-section bg-light padding-60" id="normal">
                     <div class="row">
                             <div class="row">
                                 <h1>Normal Distribution</h1>
@@ -71,7 +95,7 @@ class Qrng extends Component{
                     </div>
                 </div>
                 <hr/>
-                <div class="row team-section bg-light padding-60">
+                <div class="row team-section bg-light padding-60" id="arbitrary">
                     <div class="row">
                             <div class="row">
                                 <h1>Arbitrary Distribution</h1>

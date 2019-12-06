@@ -41,24 +41,10 @@ class MainPage extends Component{
     render(){
         return(
     <section>
-      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-      <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet"/>
-      <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"/>
-      <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/>
-
-      <link href="css/grayscale.css" rel="stylesheet"/>
-
-      
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-      <script src="js/grayscale.min.js"></script>
   <nav class="navbar navbar-expand-lg navbar-light fixed-top background-color-transparent" id="mainNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      {/* <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <img class="mx-auto max-width-height-300" src={"img/logo.PNG"}></img>
-      </a>
+      </a> */}
     <div class="container">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
@@ -88,51 +74,53 @@ class MainPage extends Component{
       <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
               <div class="mx-auto text-center">
-                <h1 class="mx-auto my-0 text-uppercase">quest</h1>
+              <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <img class="mx-auto max-width-height-800" src={"img/logo.PNG"}></img>
+              </a>
                 <p></p>
-                <a href="#research" class="btn btn-primary js-scroll-trigger">Get Started</a>
+                {/* <a href="#research" class="btn btn-primary js-scroll-trigger">Get Started</a> */}
               </div>
             </div>
           </header>
       <section id="research" class="d-flex h-100 research-section text-center" /* style={{marginTop: '5px'}} */>
                   <Carousel id="research">
                         <Carousel.Item>
-                        <img src="img/ipad.jpg" class="max-width-img-60" alt=""/>
+                        <img src="img/res/biomedic2.png" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption>
                             <h3><Link to="/biomedic">Quantum biomedic imaging</Link></h3>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/ipad.jpg" class="max-width-img-60" alt=""/>
+                        <img src="img/ipad.jpg" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption>
                             <h3><Link to="/qrng">Quantum random numbers</Link></h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/ipad.jpg" class="max-width-img-60" alt=""/>
+                        <img src="img/ipad.jpg" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption>
                             <h3><Link to="/photonics">Integrated quantum photonics</Link></h3>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/ipad.jpg" class="max-width-img-60" alt=""/>
+                        <img src="img/ipad.jpg" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption>
                             <h3>Quantum remote sensing</h3>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/ipad.jpg" class="max-width-img-60" alt=""/>
+                        <img src="img/ipad.jpg" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption>
                             <h3>Quantum communications and IoT</h3>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/ipad.jpg" class="max-width-img-60" alt=""/>
+                        <img src="img/res/Online.png" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption>
                             <h3><Link to="/optical">Quantum optical computing</Link></h3>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -140,11 +128,11 @@ class MainPage extends Component{
                         </Carousel.Item>
                   </Carousel>
             </section>
-      <section id="team" class="team-section bg-light">
+      <section id="team" class="team-section team-section-top">
         <div class="container">
         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
           <div class="col-xl-8 col-lg-7">
-            <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt=""/>
+            <img class="img-fluid mb-3 mb-lg-0" src="img/team.jpg" alt=""/>
           </div>
           <div class="col-xl-4 col-lg-5">
             <div class="featured-text text-center text-lg-left">

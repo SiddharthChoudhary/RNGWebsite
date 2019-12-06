@@ -24,9 +24,28 @@ class Photonics extends Component{
             <section id="Photonics">
                 <link href="css/grayscale.css" rel="stylesheet"/>
                     {/* <div class="row mb-5"></div> */}
-                    <div class="row bg-light padding-60">
+                    <nav class="navbar navbar-expand-lg navbar-light fixed-top background-color-transparent" id="mainNav">
+                        <a class="navbar-brand js-scroll-trigger" href="/#page-top">
+                            <img class="mx-auto max-width-height-300" src={"img/logo.PNG"}></img>
+                        </a>
+                        <div class="container">
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                            Menu
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger nav-items font-color-black" href="#photonic">Photonic</a>
+                            </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </nav>
+    
+                    <div class="row bg-light padding-60 margin-top-100">
                             <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                            <div class="project-text w-100 my-auto text-center text-lg-left" id="photonic">
                                 <h1>What is Non Linear Photonic Quantum Computing?</h1>
                                 <img src="img/photonics.jpg"></img>
                                 <p class="">At Quest group, we are devoted to building world's first Nonlinear Photonic Quantum Computing based on thin-film lithium niobate on insulator platform, as shown in the schematic. Photons are the Qubits discussed here. The system generally consists of three main parts: I, Generation, II, Manipulation and III, Detection (not shown here). Toward this goal, our team work hard to the formidable technical mastery of the fabrication of integrated quantum photonic devices. </p>
