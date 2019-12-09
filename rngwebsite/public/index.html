@@ -43,6 +43,11 @@
         new WOW().init();
         // $( ".wow" ).addClass( "fadeInRight" );
         // $(".wow").addClass("slower");
+        function gotohook(id){
+          id.preventDefault();
+          $('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+          return false;
+        }
       </script>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

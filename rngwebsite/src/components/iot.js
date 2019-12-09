@@ -13,10 +13,13 @@ import '../index.css'
 class IOT extends Component{
     constructor(){
         super()
+        this.IOT=React.createRef()
         this.state={
         }
     }
     // const handleShow = () => setShow(true);
+    scrollToMyRef = (myref) => window.scrollTo(0, myref.current.offsetTop)   
+
     // const handleClose = () => setShow(false);
     render(){
     let body;
@@ -25,8 +28,8 @@ class IOT extends Component{
                 <link href="css/grayscale.css" rel="stylesheet"/>
                     {/* <div class="row mb-5"></div> */}
                     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-                        <a class="navbar-brand js-scroll-trigger" href="/#page-top">
-                            <img class="mx-auto max-width-height-300" src={"img/logo.PNG"}></img>
+                        <a class="navbar-brand js-scroll-trigger" href="/">
+                            <img class="mx-auto max-width-height-300" src={"img/logo.png"}></img>
                         </a>
                         <div class="container">
                         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +39,7 @@ class IOT extends Component{
                         <div class="collapse navbar-collapse" id="navbarResponsive">
                             <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger nav-items font-color-black" href="#iot">IOT</a>
+                                <a class="nav-link js-scroll-trigger nav-items font-color-black" onClick={()=>this.scrollToMyRef(this.IOT)}>IOT</a>
                             </li>
                             </ul>
                         </div>
@@ -50,7 +53,7 @@ class IOT extends Component{
                                             <div class=" animated wow fadeInLeft slower col-sm-6">
                                                 <img class="rounded-125rem thumbnail max-width-100-img" src="img/res/iot_2.png"></img>
                                             </div>
-                                            <div class="animated wow fadeInRight slower col-sm-6">
+                                            <div ref={this.IOT} class="animated wow fadeInRight slower col-sm-6">
                                                 <h1>QUANTUM COMPUTING and IOT</h1>
                                                 <p>Quantum Internet of Things (QIoTs) is Internet of Things (IoTs)  embedding Quantum Keys Distribution (QKD). </p>
                                             </div>

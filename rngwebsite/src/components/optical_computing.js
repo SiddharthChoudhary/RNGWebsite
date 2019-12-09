@@ -13,11 +13,14 @@ import '../index.css'
 class OpticalComputing extends Component{
     constructor(){
         super()
+        this.opticalComputing = React.createRef()
         this.state={
         }
     }
     // const handleShow = () => setShow(true);
     // const handleClose = () => setShow(false);
+    scrollToMyRef = (myref) => window.scrollTo(0, myref.current.offsetTop)   
+
     render(){
     let body;
         body = (
@@ -25,8 +28,8 @@ class OpticalComputing extends Component{
                 <link href="css/grayscale.css" rel="stylesheet"/>
                     {/* <div class="row mb-5"></div> */}
                     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-                        <a class="navbar-brand js-scroll-trigger" href="/#page-top">
-                            <img class="mx-auto max-width-height-300" src={"img/logo.PNG"}></img>
+                        <a class="navbar-brand js-scroll-trigger" href="/">
+                            <img class="mx-auto max-width-height-300" src={"img/logo.png"}></img>
                         </a>
                         <div class="container">
                         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +39,7 @@ class OpticalComputing extends Component{
                         <div class="collapse navbar-collapse" id="navbarResponsive">
                             <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger nav-items font-color-black" href="#optical">OPTICAL COMPUTING</a>
+                                <a class="nav-link js-scroll-trigger nav-items font-color-black" onClick={()=>this.scrollToMyRef(this.opticalComputing)}>OPTICAL COMPUTING</a>
                             </li>
                             </ul>
                         </div>
@@ -46,7 +49,7 @@ class OpticalComputing extends Component{
                     <div class="padding-60  margin-top-100">
                                 <div class="container width-height-100vw-100vh text-align-center">
                                     <div class="row margin-100-100"></div>
-                                    <div class="row " id="optical">
+                                    <div ref={this.opticalComputing} class="row " id="optical">
                                             <div class=" animated wow fadeInLeft slower col-sm-6">
                                                 <img class="rounded-125rem thumbnail max-width-100-img" src="img/res/OpticalComputing.png"></img>
                                             </div>

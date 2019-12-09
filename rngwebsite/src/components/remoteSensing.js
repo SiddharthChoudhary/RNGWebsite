@@ -8,11 +8,14 @@ import '../index.css'
 class RemoteSensing extends Component{
     constructor(){
         super()
+        this.RemoteSensing = React.createRef()
         this.state={
         }
     }
     // const handleShow = () => setShow(true);
     // const handleClose = () => setShow(false);
+    scrollToMyRef = (myref) => window.scrollTo(0, myref.current.offsetTop)   
+
     render(){
     let body;
         body = (
@@ -20,8 +23,8 @@ class RemoteSensing extends Component{
                 <link href="css/grayscale.css" rel="stylesheet"/>
                     {/* <div class="row mb-5"></div> */}
                     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-                        <a class="navbar-brand js-scroll-trigger" href="/#page-top">
-                            <img class="mx-auto max-width-height-300" src={"img/logo.PNG"}></img>
+                        <a class="navbar-brand js-scroll-trigger" href="/">
+                            <img class="mx-auto max-width-height-300" src={"img/logo.png"}></img>
                         </a>
                         <div class="container">
                         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +34,7 @@ class RemoteSensing extends Component{
                         <div class="collapse navbar-collapse" id="navbarResponsive">
                             <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger nav-items font-color-black" href="#remotesensing">Remote Sensing</a>
+                                <a class="nav-link js-scroll-trigger nav-items font-color-black" onClick={()=>this.scrollToMyRef(this.RemoteSensing)}>Remote Sensing</a>
                             </li>
                             </ul>
                         </div>
@@ -41,9 +44,9 @@ class RemoteSensing extends Component{
                     <div class="padding-60  margin-top-100">
                                 <div class="container width-height-100vw-100vh text-align-center">
                                     <div class="row margin-100-100"></div>
-                                    <div class="row " id="remotesensing">
+                                    <div ref={this.RemoteSensing} class="row " id="remotesensing">
                                             <div class=" animated wow fadeInLeft slower col-sm-6">
-                                                <img class="rounded-125rem thumbnail max-width-100-img" src="img/res/remote_Sensing_3.png"></img>
+                                                <img class="rounded-125rem thumbnail max-width-100-img" src="img/res/remote_sensing_3.png"></img>
                                             </div>
                                             <div class="animated wow fadeInRight slower col-sm-6">
                                                 <h1>Remote Sensing</h1>

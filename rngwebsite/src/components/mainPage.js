@@ -6,6 +6,12 @@ class MainPage extends Component{
 
     constructor(){
         super()
+        this.research = React.createRef()  
+        this.team = React.createRef()  
+        this.opportunities = React.createRef()  
+        this.aboutus = React.createRef()  
+        this.news = React.createRef()  
+
         this.state={
           // remember to not include / in the end because I am splitting the url based on slashes to display title
           // for the news article on the front page
@@ -38,12 +44,14 @@ class MainPage extends Component{
         }
       return div
     }
+    scrollToMyRef = (myref) => window.scrollTo(0, myref.current.offsetTop)   
+
     render(){
         return(
     <section>
   <nav class="navbar navbar-expand-lg navbar-light fixed-top background-color-transparent" id="mainNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <img class="mx-auto max-width-height-300" src={"img/logo.PNG"}></img>
+      <a class="navbar-brand js-scroll-trigger" href="/">
+        <img class="mx-auto max-width-height-300" src={"img/logo.png"}></img>
       </a>
     <div class="container">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,19 +61,19 @@ class MainPage extends Component{
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger nav-items" href="#research">Research Projects</a>
+            <a class="nav-link js-scroll-trigger nav-items" onClick={()=>this.scrollToMyRef(this.research)}>Research Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            <a class="nav-link js-scroll-trigger" onClick={()=>this.scrollToMyRef(this.team)}>Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#news">News</a>
+            <a class="nav-link js-scroll-trigger" onClick={()=>this.scrollToMyRef(this.news)}>News</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#opportunities">Opportunities</a>
+            <a class="nav-link js-scroll-trigger" onClick={()=>this.scrollToMyRef(this.opportunities)}>Opportunities</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" onClick={()=>this.scrollToMyRef(this.aboutus)}>About</a>
           </li>
         </ul>
       </div>
@@ -80,7 +88,7 @@ class MainPage extends Component{
               </div>
             </div>
           </header>
-      <section id="research" class="d-flex h-100 research-section text-center" /* style={{marginTop: '5px'}} */>
+      <section ref={this.research} id="research" class="d-flex h-100 research-section text-center" /* style={{marginTop: '5px'}} */>
                   <Carousel id="research">
                         <Carousel.Item>
                         <img src="img/res/biomedic2.png" class="max-min-width-img-60" alt=""/>
@@ -104,7 +112,7 @@ class MainPage extends Component{
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/res/remote_Sensing_1.jpg" class="max-min-width-img-60" alt=""/>
+                        <img src="img/res/remote_sensing_1.jpg" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption>
                             <h3 class="font-size-80-px">QUANTUM REMOTE SENSING</h3>
                             <Link to="/remotesensing">Read More</Link>
@@ -126,7 +134,7 @@ class MainPage extends Component{
                         </Carousel.Item>
                   </Carousel>
             </section>
-      <section id="team" class="team-section team-section-top">
+      <section ref={this.team} id="team" class="team-section team-section-top">
         <div class="container">
         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
           <div class="col-xl-8 col-lg-7">
@@ -143,7 +151,7 @@ class MainPage extends Component{
         </div>
         </div>
       </section>
-      <section id="news" class="signup-section">
+      <section ref={this.news} id="news" class="signup-section">
         <div class="container">
           <div class="row">
             <div class="col-md-10 col-lg-8 mx-auto text-center">
@@ -155,13 +163,13 @@ class MainPage extends Component{
           </div>
         </div>
       </section>
-      <section class="opportunities-section bg-black">
+      <section  ref={this.aboutus} class="opportunities-section bg-black">
         <div class="container">
         <div id="about" class="row text-center justify-content-center">
         <h2 class="text-center text-white-50">About Us</h2>
         <p class="text-white-50 container">QuEST lab dedicates in research and development of practical quantum systems and technology that will create advantages and values for scientific and industrial communities. Our proud team consists of students and scholars with deep background in physics, optics, electronics, computer science, and son on. Through collaboration, we undertake a vastly interdisciplinary approach to quantum biomedic imaging, simulation, integrated nanophotonics, remote sensing, networking, and optical computing.</p>
         </div>
-      <div  id ="opportunities" class="row margin-top-100">
+      <div  ref={this.opportunities} id ="opportunities" class="row margin-top-100">
       <div class="col-md-4 mb-3 mb-md-0">
         <div class="card py-4 h-100">
           <div class="card-body text-center">

@@ -13,18 +13,22 @@ import '../index.css'
 class Qrng extends Component{
     constructor(){
         super()
+        this.uniform = React.createRef()
+        this.normal = React.createRef()
+        this.arbitrary = React.createRef()
         this.state={
         }
     }
-    // const handleShow = () => setShow(true);
-    // const handleClose = () => setShow(false);
+    
+    scrollToMyRef = (myref) => window.scrollTo(0, myref.current.offsetTop)   
+
     render(){
         let body;
         body = (          
             <section id="qrng">
                  <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top">
-                    <a class="navbar-brand js-scroll-trigger" href="/#page-top">
-                        <img class="mx-auto max-width-height-300" src={"img/logo.PNG"}></img>
+                    <a class="navbar-brand js-scroll-trigger" href="/">
+                        <img class="mx-auto max-width-height-300" src={"img/logo.png"}></img>
                     </a>
                     <div class="container">
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,13 +38,13 @@ class Qrng extends Component{
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger nav-items font-color-black" href="#uniform">Uniform</a>
+                            <a class="nav-link js-scroll-trigger nav-items font-color-black" onClick={()=>this.scrollToMyRef(this.uniform)}>Uniform</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger font-color-black" href="#normal">Normal</a>
+                            <a class="nav-link js-scroll-trigger font-color-black" onClick={()=>this.scrollToMyRef(this.normal)}>Normal</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger font-color-black" href="#arbitrary">Arbitrary</a>
+                            <a class="nav-link js-scroll-trigger font-color-black" onClick={()=>this.scrollToMyRef(this.arbitrary)}>Arbitrary</a>
                         </li>
                         </ul>
                     </div>
@@ -63,7 +67,7 @@ class Qrng extends Component{
                                 </div>
                                 <div class="container text-align-center">
                                     <div class="row"></div>
-                                    <div class="row " id="uniform">
+                                    <div ref={this.uniform} class="row " id="uniform">
                                             <div class="animated wow fadeInRight slower col-sm-12">  
                                                 <h1>Uniform Distribution</h1>
                                                 <p class=" mb-0">Uniform QRNs is created by switching off RF pulses. Each photon is equally likely to be detected in any bin over a period of a reference signal, thus creating high-dimensional, uniform RNs. Entropy estimation: <span class="">0.9987 per bit.</span> </p>
@@ -76,7 +80,7 @@ class Qrng extends Component{
                                 </div>
                                 <div class="container text-align-center">
                                     <div class="row margin-100-100"></div>
-                                    <div class="row " id="normal">
+                                    <div ref={this.normal} class="row " id="normal">
                                             <div class="animated wow fadeInRight slower col-sm-12">
                                                 <h1>Normal Distribution</h1>
                                                 <p class=" mb-0">Normal QRNs is created from shaping photon temporal profile into Gaussian distribution by manipulating RF pulses.Entropy estimation: <span>0.877 per bit.</span>Randomness tests: NIST SP 800-22 after convert the generated Gaussian-distributed QRNs to uniform random numbers via the inverse Box–Muller transformation </p>                                
@@ -90,7 +94,7 @@ class Qrng extends Component{
                                 </div>
                                 <div class="container width-height-100vw-100vh text-align-center">
                                     <div class="row margin-100-100"></div>
-                                    <div class="row " id="arbitrary">
+                                    <div ref={this.arbitrary} class="row " id="arbitrary">
                                             <div class="animated wow fadeInRight slower col-sm-12">
                                                 <h1>Arbitrary Distribution</h1>
                                                 <p class=" mb-0">While certain non-uniform random numbers can be numerically constructed from uniform ones, the procedures are usually time-consuming and computationally complicated, while also prone to adversary interference. For example, random variate generation of non-uniform distributions relies on precise information of hazard rate, density,cumulative distribution function, distribution mode, inverse function, etc. Moreover, for each distribution, a specific algorithm needs to be developed and optimized individually. In light of this challenge, QuEST lab provides the first and only QRNG with the capability of directly generating user-defined probability distribution genuine RNs.  </p>                                

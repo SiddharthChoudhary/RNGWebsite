@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import {Button,Modal,InputGroup,FormControl} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {BrowserRouter as Router,Route,Link} from 'react-router-dom'
+import {BrowserRouter as Router,Route, Link} from 'react-router-dom'
 import '../../index.css'
 // import Modal from './modal'
 
@@ -21,20 +21,7 @@ class Normal extends Component{
         }
     }
     validate(){
-        // fetch('http://35.192.39.81:5050/main?lower=0&higher='+Number.parseInt(this.state.max)+'&amount='+Number.parseInt(this.state.amount))
-        //         .then((response) => {return response.text()})
-        //         .then((responseJson) => {
-        //             // console.log("Response is ",JSON.parse(responseJson));
-        //             this.setState({
-        //                response: responseJson.finalrandomarray ? JSON.parse(responseJson.finalrandomarray) : {}
-        //             });
-        //             // this.setState({
-        //             //     response: responseJson.finalrandomarray
-        //             // })
-        //         })
-        //         .catch((error)=>{
-        //         alert(error)
-        //     })
+
     }
     handleMinChange=(e)=>{
         this.setState({
@@ -66,8 +53,8 @@ class Normal extends Component{
         body = (
             <section id="Normal">
                 <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top">
-                    <a class="navbar-brand js-scroll-trigger" href="/#page-top">
-                        <img class="mx-auto max-width-height-300" src={"img/logo.PNG"}></img>
+                    <a class="navbar-brand js-scroll-trigger" href="/">
+                        <img class="mx-auto max-width-height-300" src={"img/logo.png"}></img>
                     </a>
                     <div class="container">
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,10 +64,10 @@ class Normal extends Component{
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger nav-items font-color-black" href="/uniform">Uniform</a>
+                            <a class="nav-link js-scroll-trigger nav-items font-color-black" href="/#/uniform">Uniform</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger font-color-black" href="/arbitrary">Arbitrary</a>
+                            <a class="nav-link js-scroll-trigger font-color-black" href="/#/arbitrary">Arbitrary</a>
                         </li>
                         </ul>
                     </div>

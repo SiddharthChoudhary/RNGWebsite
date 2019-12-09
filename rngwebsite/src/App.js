@@ -1,10 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {BrowserRouter as Router,Route,Link} from 'react-router-dom'
+import {BrowserRouter,HashRouter,Route,browserHistory,Switch,Link} from 'react-router-dom'
 import Dashboard from './components/dashboard'
-import QRNGCorrelated from './components/qrngcorrelated'
-import linkApp from './components/linkApp'
 import normal from './components/subComponents/normal'
 import arbitrary from './components/subComponents/arbitrary'
 import MainPage from './components/mainPage'
@@ -14,13 +12,13 @@ import BioMedic from './components/biomedical_image'
 import ScrolltoTop from 'react-router-scroll-top'
 import Team from './components/team'
 import OpticalComputing from './components/optical_computing'
-import ListFiles from './components/listFiles'
 import RemoteSensing from './components/remoteSensing'
 import IOT from './components/iot'
 import Photonics from './components/photonics';
 function App() {
   return (
-    <Router>  
+    <HashRouter basename="/">
+      <Switch>
       <ScrolltoTop>
       <div classname="App-header">
       <Route exact path="/" component={MainPage}/>
@@ -29,17 +27,15 @@ function App() {
       <Route exact path="/arbitrary" component={arbitrary}/>
       <Route exact path="/normal" component={normal}/>
       <Route exact path="/qrng" component={qrng}/>
-      <Route path="/qrngCorrelated" component={QRNGCorrelated}/>
-      <Route path="/biomedic" component={BioMedic}/>
-      <Route path="/photonics" component={Photonics}/>
-      <Route path="/linkApp" component={linkApp}/>
-      <Route path="/iot" component={IOT}/>
-      <Route path="/optical" component={OpticalComputing}/>
-      <Route path="/remotesensing" component={RemoteSensing}/>
-      <Route exact path="/listFiles" component={ListFiles}/>
+      <Route exact path="/biomedic" component={BioMedic}/>
+      <Route exact path="/photonics" component={Photonics}/>
+      <Route exact path="/iot" component={IOT}/>
+      <Route exact path="/optical" component={OpticalComputing}/>
+      <Route exact path="/remotesensing" component={RemoteSensing}/>
       </div>
       </ScrolltoTop>
-    </Router>
+      </Switch>
+    </HashRouter>
   );
 }
 

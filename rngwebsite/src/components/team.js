@@ -15,6 +15,11 @@ functions, teamIcons and teamModals
 class Team extends Component{
     constructor(){
         super()
+        this.research = React.createRef()  
+        this.team = React.createRef()  
+        this.opportunities = React.createRef()  
+        this.aboutus = React.createRef()  
+        this.news = React.createRef()  
         this.state={
             teamMembers:[
                 {
@@ -134,7 +139,7 @@ class Team extends Component{
                 description:'Research area: LiDAR based on up-conversion. '+
                 'Digital image processing.'+
                 'Shenyu Zhu has B.S(2014) and M.S.(2017) at School of Instrumentation Science and Optoelectronic Engineering, Beijing University of Aeronautics and Astronautics.',
-                image:"ShenJu.jpg"
+                image:"shenJu.jpg"
                 },
                 {name:"Siddharth Choudhary",
                 email:'schoud2@stevens.edu',
@@ -172,13 +177,13 @@ class Team extends Component{
                 email:'zma12@stevens.edu',
                 show:false,
                 description:'Currently, I am training into nonlinear optics and nanophotonic.',
-                image:"zhaohui.jpg"
+                image:"Zhaohui.jpg"
                 },
                 {name:'Zipei Zheng',
                 email:'zzheng22@stevens.ed',
                 show:false,
                 description:'I am the new P.h.d student on training. I get my BS degree in Physics from the University of Colorado Boulder in 2019. My biggest interest in physics is light, I think it is the most mysterious thing in our universe. I love everything related to light and really want to learn more about it. But for now, I am trying to focus on quantum physics and quantum technology in order to follow the pace of modern scientists. In my spare time at home, I prefer reading, cooking and listening to music. J-pop is my favorite music genre. I also enjoy the off-road trip and fishing. ',
-                image:"zipei zheng.jpg"
+                image:"zipei_zheng.jpg"
                 }
             ]
         }
@@ -238,6 +243,8 @@ class Team extends Component{
         }
         return div
     }
+    scrollToMyRef = (myref) => window.scrollTo(0, myref.current.offsetTop)   
+
     // const handleShow = () => setShow(true);
     // const handleClose = () => setShow(false);
     render(){
@@ -247,7 +254,7 @@ class Team extends Component{
                 {this.teamModals()}
                 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
                     <a class="navbar-brand js-scroll-trigger" href="/">
-                        <img class="mx-auto max-width-height-300" src={"img/logo.PNG"}></img>
+                        <img class="mx-auto max-width-height-300" src={"img/logo.png"}></img>
                     </a>
                     <div class="container">
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -257,19 +264,19 @@ class Team extends Component{
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger nav-items font-color-black" href="/#research">Research Projects</a>
+                            <a class="nav-link js-scroll-trigger nav-items font-color-black" href="/">Research Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger font-color-black" href="/#team">Team</a>
+                            <a class="nav-link js-scroll-trigger font-color-black" href="/">Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger font-color-black" href="/#news">News</a>
+                            <a class="nav-link js-scroll-trigger font-color-black" href="/">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger font-color-black" href="/#opportunities">Opportunities</a>
+                            <a class="nav-link js-scroll-trigger font-color-black" href="/">Opportunities</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger font-color-black" href="/#about">About</a>
+                            <a class="nav-link js-scroll-trigger font-color-black" href="/">About</a>
                         </li>
                         </ul>
                     </div>

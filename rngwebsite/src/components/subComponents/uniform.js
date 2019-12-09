@@ -46,8 +46,8 @@ class Uniform extends Component{
         body = (
             <section id="Uniform">
                 <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top">
-                    <a class="navbar-brand js-scroll-trigger" href="/#page-top">
-                        <img class="mx-auto max-width-height-300" src={"img/logo.PNG"}></img>
+                    <a class="navbar-brand js-scroll-trigger" href="/">
+                        <img class="mx-auto max-width-height-300" src={"img/logo.png"}></img>
                     </a>
                     <div class="container">
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,10 +57,10 @@ class Uniform extends Component{
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger font-color-black" href="/normal">Normal</a>
+                            <a class="nav-link js-scroll-trigger font-color-black" href="/#/normal">Normal</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger font-color-black" href="/arbitrary">Arbitrary</a>
+                            <a class="nav-link js-scroll-trigger font-color-black" href="/#/arbitrary">Arbitrary</a>
                         </li>
                         </ul>
                     </div>
