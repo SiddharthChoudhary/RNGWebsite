@@ -42,9 +42,9 @@ class MainPage extends Component{
         return(
     <section>
   <nav class="navbar navbar-expand-lg navbar-light fixed-top background-color-transparent" id="mainNav">
-      {/* <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <img class="mx-auto max-width-height-300" src={"img/logo.PNG"}></img>
-      </a> */}
+      </a>
     <div class="container">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
@@ -74,9 +74,7 @@ class MainPage extends Component{
       <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
               <div class="mx-auto text-center">
-              <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <img class="mx-auto max-width-height-800" src={"img/logo.PNG"}></img>
-              </a>
+                <h2 className="heading">Laboratory For Quantum Enhanced Systems and Technology</h2>
                 <p></p>
                 {/* <a href="#research" class="btn btn-primary js-scroll-trigger">Get Started</a> */}
               </div>
@@ -87,43 +85,43 @@ class MainPage extends Component{
                         <Carousel.Item>
                         <img src="img/res/biomedic2.png" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption>
-                            <h3><Link to="/biomedic">Quantum biomedic imaging</Link></h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            <h1 class="font-size-80-px">QUANTUM BIOMEDIC IMAGING</h1>
+                            <Link to="/biomedic">Read More</Link>
+                          </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                        <img src="img/res/qrng.png" class="max-min-width-img-60" alt=""/>
+                          <Carousel.Caption>
+                            <h3 class="font-size-80-px">QUANTUM RANDOM NUMBERS</h3>
+                            <Link to="/qrng">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                         <img src="img/ipad.jpg" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption>
-                            <h3><Link to="/qrng">Quantum random numbers</Link></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3 class="font-size-80-px">INTEGRATED QUANTUM PHOTONICS</h3>
+                            <Link to="/photonics">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/ipad.jpg" class="max-min-width-img-60" alt=""/>
+                        <img src="img/res/remote_Sensing_1.jpg" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption>
-                            <h3><Link to="/photonics">Integrated quantum photonics</Link></h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h3 class="font-size-80-px">QUANTUM REMOTE SENSING</h3>
+                            <Link to="/remotesensing">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/ipad.jpg" class="max-min-width-img-60" alt=""/>
+                        <img src="img/res/iot_3.png" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption>
-                            <h3>Quantum remote sensing</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                          </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                        <img src="img/ipad.jpg" class="max-min-width-img-60" alt=""/>
-                          <Carousel.Caption>
-                            <h3>Quantum communications and IoT</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h3 class="font-size-80-px">QUANTUM COMPUTING AND IOT</h3>
+                            <Link to="/iot">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                         <img src="img/res/Online.png" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption>
-                            <h3><Link to="/optical">Quantum optical computing</Link></h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h3 class="font-size-80-px">QUANTUM OPTICAL COMPUTING</h3>
+                            <Link to="/optical">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
                   </Carousel>
@@ -132,12 +130,12 @@ class MainPage extends Component{
         <div class="container">
         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
           <div class="col-xl-8 col-lg-7">
-            <img class="img-fluid mb-3 mb-lg-0" src="img/team.jpg" alt=""/>
+            <img class="animated wow fadeInLeft slower img-fluid mb-3 mb-lg-0" src="img/team.jpg" alt=""/>
           </div>
           <div class="col-xl-4 col-lg-5">
-            <div class="featured-text text-center text-lg-left">
+            <div class="animated wow fadeInRight slower featured-text text-center text-lg-left text-color-white">
               <h4>Team</h4>
-              <p class="text-black-50 mb-0">Get the team members deatils over here</p> <Link to="/team">
+              <p class="mb-0">Get the team members deatils over here</p> <Link to="/team">
           Visit Team Members
         </Link>
             </div>

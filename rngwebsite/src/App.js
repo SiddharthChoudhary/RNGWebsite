@@ -15,6 +15,8 @@ import ScrolltoTop from 'react-router-scroll-top'
 import Team from './components/team'
 import OpticalComputing from './components/optical_computing'
 import ListFiles from './components/listFiles'
+import RemoteSensing from './components/remoteSensing'
+import IOT from './components/iot'
 import Photonics from './components/photonics';
 function App() {
   return (
@@ -31,7 +33,9 @@ function App() {
       <Route path="/biomedic" component={BioMedic}/>
       <Route path="/photonics" component={Photonics}/>
       <Route path="/linkApp" component={linkApp}/>
+      <Route path="/iot" component={IOT}/>
       <Route path="/optical" component={OpticalComputing}/>
+      <Route path="/remotesensing" component={RemoteSensing}/>
       <Route exact path="/listFiles" component={ListFiles}/>
       </div>
       </ScrolltoTop>

@@ -243,10 +243,9 @@ class Team extends Component{
     render(){
     let body;
         body = (
-            <section>
+            <section id="team">
                 {this.teamModals()}
-                <link href="css/grayscale.css" rel="stylesheet"/>
-                <nav class="navbar navbar-expand-lg navbar-light fixed-top background-color-transparent" id="mainNav">
+                <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
                     <a class="navbar-brand js-scroll-trigger" href="/">
                         <img class="mx-auto max-width-height-300" src={"img/logo.PNG"}></img>
                     </a>
@@ -258,26 +257,26 @@ class Team extends Component{
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger nav-items" href="/#research">Research Projects</a>
+                            <a class="nav-link js-scroll-trigger nav-items font-color-black" href="/#research">Research Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="/#team">Team</a>
+                            <a class="nav-link js-scroll-trigger font-color-black" href="/#team">Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="/#news">News</a>
+                            <a class="nav-link js-scroll-trigger font-color-black" href="/#news">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="/#opportunities">Opportunities</a>
+                            <a class="nav-link js-scroll-trigger font-color-black" href="/#opportunities">Opportunities</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="/#about">About</a>
+                            <a class="nav-link js-scroll-trigger font-color-black" href="/#about">About</a>
                         </li>
                         </ul>
                     </div>
                     </div>
                 </nav>
                 
-                <div class="signup-section">
+                <div class="team-section">
                     <div class="row">
                         <div class="col-lg-12 text-center">
                         <h2 class="section-heading color-white text-uppercase margin-top-100">Meet Our Amazing Team</h2>

@@ -2,15 +2,10 @@ import React,{Component} from 'react';
 import {Button,Modal} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router,Route,Link} from 'react-router-dom'
-
 import '../index.css'
-// import Modal from './modal'
 
 
-/* 
-
-*/
-class BioMedic extends Component{
+class RemoteSensing extends Component{
     constructor(){
         super()
         this.state={
@@ -21,7 +16,7 @@ class BioMedic extends Component{
     render(){
     let body;
         body = (
-            <section id="BioMedic">
+            <section id="RemoteSensing">
                 <link href="css/grayscale.css" rel="stylesheet"/>
                     {/* <div class="row mb-5"></div> */}
                     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -36,28 +31,30 @@ class BioMedic extends Component{
                         <div class="collapse navbar-collapse" id="navbarResponsive">
                             <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger nav-items font-color-black" href="#BioMedic">BioMedical</a>
+                                <a class="nav-link js-scroll-trigger nav-items font-color-black" href="#remotesensing">Remote Sensing</a>
                             </li>
                             </ul>
                         </div>
                         </div>
                     </nav>
+    
                     <div class="padding-60  margin-top-100">
                                 <div class="container width-height-100vw-100vh text-align-center">
                                     <div class="row margin-100-100"></div>
-                                    <div class="row " id="BioMedic">
+                                    <div class="row " id="remotesensing">
                                             <div class=" animated wow fadeInLeft slower col-sm-6">
-                                                <img class="rounded-125rem thumbnail max-width-100-img" src="img/biomedic.png"></img>
+                                                <img class="rounded-125rem thumbnail max-width-100-img" src="img/res/remote_Sensing_3.png"></img>
                                             </div>
                                             <div class="animated wow fadeInRight slower col-sm-6">
-                                                <h1>BioMedical Imaging</h1>
+                                                <h1>Remote Sensing</h1>
                                             </div>
-                                            <div class="text-align-center">
-                                                    <p class="animated wow fadeIn slower">Imaging through strongly scattering media remains a quest of importance in many areas, particularly for in vivo biomedical imaging through human soft tissues. In battles against cancer, early detection and diagnosis are essential in preventing tumors from reaching critical or fatal levels where invasive surgery or chemotherapy become necessary treatments.</p>
-                                                    <p class="animated wow fadeInLeft slow">Identifying and treating cancer at a subtle level before growing into problematic tumors will save many lives, but early detection of just a few cancer cells is impossible due to the multi-scattering of light in human tissues. </p>
-                                                    <p class="animated wow fadeInRight slow">At Quest Lab, we seek to remedy this problem. By mode-selective detection of ballistic backscattered photons, we demonstrate non-invasive 3D imaging of a target occluded by strongly scattering media with optical depth reaching 9.4 (18.8 round trip). The imager, using milliWatt illuminating power and placed 50 cm from the target, achieves millimeter depth resolution with only 2.0x10-5 detected photons/pulse. This technique can find a variety of imaging applications, particularly those in biomedical imaging using in situ measurements through deep living tissues</p>
-                                            </div>
-                                        </div>
+                                    </div>
+                                    <div class="row margin-100-100"></div>
+                                    <div class="row ">
+                                        <p class="animated wow fadeInLeft slower">Light detection and ranging (LiDAR) has become a versatile tool for many remote sensing applications including 3-dimensional mapping, autonomous navigation, and environmental monitoring. </p>
+                                        <p class="animated wow fadeInRight slower">The operating principle of any active LiDAR system is to use the returning optical probe signal to gain information about the target scene. Difficulty arises in remote sensing applications where the returning probe signal is weak and returns along with strong background noise.</p>
+                                        <p class="animated wow fadeInLeft slower">Such extreme operating conditions leave conventional LiDAR approaches ineffective. We aim to extend the limit on what can be remotely sensed using our Quantum Enhanced LiDAR system that has demonstrated outstanding performance in signal isolation and background suppression.</p>
+                                    </div>
                                     </div>
                                 </div>
                     <hr/>
@@ -72,4 +69,4 @@ class BioMedic extends Component{
 }
 }
 
-export default BioMedic;
+export default RemoteSensing;

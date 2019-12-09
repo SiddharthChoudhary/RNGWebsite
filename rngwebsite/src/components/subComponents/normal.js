@@ -64,9 +64,29 @@ class Normal extends Component{
     render(){
     let body;
         body = (
-            <section>
-                <link href="css/grayscale.css" rel="stylesheet"/>
-                <div class="container">
+            <section id="Normal">
+                <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top">
+                    <a class="navbar-brand js-scroll-trigger" href="/#page-top">
+                        <img class="mx-auto max-width-height-300" src={"img/logo.PNG"}></img>
+                    </a>
+                    <div class="container">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        Menu
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger nav-items font-color-black" href="/uniform">Uniform</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger font-color-black" href="/arbitrary">Arbitrary</a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+                <div class="container margin-top-100">
                 <div class="row justify-content-center no-gutters">
                     <div class="col-lg-6">
                     <img class="img-fluid" src="img/demo-image-02.jpg" alt=""/>
@@ -76,7 +96,7 @@ class Normal extends Component{
                         <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-right">
                             <h4 class="text-white">Normal Distribution</h4>
-                            <p class="mb-0 text-white-50">A description explaining that how the api works and what is Normal Distribution all about</p>
+                            <p class="mb-0 ">A description explaining that how the api works and what is Normal Distribution all about</p>
                             <hr class="d-none d-lg-block mb-0 mr-0"/>
                         </div>
                         </div>
@@ -90,15 +110,15 @@ class Normal extends Component{
                     <div>
                     </div>
                 </div>
-                <div class="row team-section bg-light">
+                <div class="row team-section ">
                         <div class="container">
                         <div class="row">
                              <div class="container">
                     <div class="row align-items-center no-gutters mb-4 mb-lg-5">
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                        <h4>API</h4> <p><Link onClick={()=>this.showModal(this.state.show)}>TryNow</Link></p>
-                        <p class="text-black-50 mb-0">http://quest.phy.stevens.edu:5050/normalDistribution</p>
+                        <h4>API</h4> <p class="animated bounce infinite"><Link onClick={()=>this.showModal(this.state.show)}>TryNow</Link></p>
+                        <p class=" mb-0">http://quest.phy.stevens.edu:5050/normalDistribution</p>
                         <Modal show={this.state.show} onHide={()=>this.hideModal(this.state.show)}>
                         <Modal.Header closeButton>
                         <Modal.Title>Select Input</Modal.Title>
@@ -146,18 +166,18 @@ class Normal extends Component{
                         </div>
                         <div class="row">
                             where 
-                            <span class="text-black-50">&nbsp; lower &nbsp; </span> is the minimum range (cannot go less than 0)
+                            <span class="">&nbsp; lower &nbsp; </span> is the minimum range (cannot go less than 0)
                         </div>
                         <div class="row">
-                            where <span class="text-black-50">&nbsp; higher &nbsp; </span> is the maximum range
+                            where <span class="">&nbsp; higher &nbsp; </span> is the maximum range
                         </div>
                         <div class="row">
-                            where <span class="text-black-50">&nbsp; amount &nbsp; </span> is the number of random numbers you want (cannot go less than 500)
+                            where <span class="">&nbsp; amount &nbsp; </span> is the number of random numbers you want (cannot go less than 500)
                         </div>
                         <div class="row margin-top"></div>
                         <div class="row margin-top">
                             <h5>For example: </h5>
-                            <p class="text-black-50"> http://quest.phy.stevens.edu:5050/normalDistribution?lower=0&higher=10&amount=10</p>
+                            <p class=""> http://quest.phy.stevens.edu:5050/normalDistribution?lower=0&higher=10&amount=10</p>
                         </div>
                         </div>
 
@@ -165,19 +185,8 @@ class Normal extends Component{
                         </div>
                 </div>
                 </div>
-                <section id="team" class="team-section bg-light">
-                    <div class="container">
-                    <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                        <h4>Know More About Us</h4>
-                        <p class="text-black-50 mb-0">For More Information Stay Connected</p>
-                        </div>
-                    </div>
-                    </div>
-                    </div>
-                </section>
-                <footer class="bg-black small text-center text-white-50">
+                
+                <footer class="bg-black small text-center ">
                     <div class="container">
                     Copyright &copy; Quest Stevens EDU 2019
                     </div>
