@@ -82,7 +82,7 @@ class MainPage extends Component{
       <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
               <div class="mx-auto text-center">
-                <h2 className="heading">Laboratory For Quantum Enhanced Systems and Technology</h2>
+                <h2 className="heading">Laboratory for Quantum Enhanced Systems and Technology</h2>
                 <p></p>
                 {/* <a href="#research" class="btn btn-primary js-scroll-trigger">Get Started</a> */}
               </div>
@@ -167,13 +167,19 @@ class MainPage extends Component{
         <div class="container">
         <div id="about" class="row text-center justify-content-center">
         <h2 class="text-center text-white-50">About Us</h2>
-        <p class="text-white-50 container">QuEST lab dedicates in research and development of practical quantum systems and technology that will create advantages and values for scientific and industrial communities. Our proud team consists of students and scholars with deep background in physics, optics, electronics, computer science, and son on. Through collaboration, we undertake a vastly interdisciplinary approach to quantum biomedic imaging, simulation, integrated nanophotonics, remote sensing, networking, and optical computing.</p>
+        <p class="text-white-50 container">QuEST lab studies and develops robust quantum systems and technology
+          of practical advantages and values. Our proud team consists of 30+ students and scholars with expertise
+           in physics, optics, electronics, and computer science, as well as industrial experiences. 
+           Through strong synergy, we undertake a vastly interdisciplinary approach 
+           to biomedic imaging, big data analytics, integrated nanophotonics, 
+           remote sensing, networking, and optical computing, all havesting or inspired by mighty quantum physics.
+            </p>
         </div>
       <div  ref={this.opportunities} id ="opportunities" class="row margin-top-100">
       <div class="col-md-4 mb-3 mb-md-0">
         <div class="card py-4 h-100">
           <div class="card-body text-center">
-            <h4 class="text-uppercase m-0">Research Assistant</h4>
+            <h4 class="text-uppercase m-0">Undergraduate/graduate Research Assistant</h4>
             <hr class="my-4"/>
             <div class="small text-black-50"></div>
           </div>
@@ -183,7 +189,7 @@ class MainPage extends Component{
       <div class="col-md-4 mb-3 mb-md-0">
         <div class="card py-4 h-100">
           <div class="card-body text-center">
-            <h4 class="text-uppercase m-0">Graduate PHD assistant</h4>
+            <h4 class="text-uppercase m-0">PhD positions</h4>
             <hr class="my-4"/>
           </div>
         </div>
@@ -192,14 +198,14 @@ class MainPage extends Component{
       <div class="col-md-4 mb-3 mb-md-0">
         <div class="card py-4 h-100">
           <div class="card-body text-center">
-            <h4 class="text-uppercase m-0">Research Assistant (C.S)</h4>
+            <h4 class="text-uppercase m-0">Postdoctoral Fellows</h4>
             <hr class="my-4"/>
           </div>
         </div>
       </div>
       </div>
       <div class="text-center margin-top">
-          <h4 class="color-white">Apply Now by sending an email at yhuang5@stevens.edu</h4>
+          <h4 class="color-white">Apply Now by sending an email to yhuang5@stevens.edu</h4>
       </div>
       <div class="social d-flex justify-content-center">
       <a href="#" class="mx-2">

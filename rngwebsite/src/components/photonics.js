@@ -54,18 +54,25 @@ class Photonics extends Component{
                                                 <img class="rounded-125rem thumbnail max-width-100-img" src="img/photonics.jpg"></img>
                                             </div>
                                             <div class="animated wow fadeInRight slower col-sm-6">
-                                                <h1>Non Linear Photonic Quantum Computing</h1>
+                                                <h1>Nonlinear Photonic Quantum Chips</h1>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div ref={this.photonic} class="container text-align-center font-size-only-x-large">
                                     <div class="row">
-                                        <p class="animated wow fadeInLeft slower">At Quest group, we are devoted to building world's first Nonlinear Photonic Quantum Computing based on thin-film lithium niobate on insulator platform, as shown in the schematic. Photons are the Qubits discussed here. The system generally consists of three main parts: I, Generation, II, Manipulation and III, Detection (not shown here). Toward this goal, our team work hard to the formidable technical mastery of the fabrication of integrated quantum photonic devices. </p>
-                                        <p class="animated wow fadeInRight slower">I, Generation, we demonstrated the high purity (CAR>600) photon-pairs in periodical poled lithium niobate nanowaveguides [OSA Continuum 2, 2914-2924 (2019)].</p>
-                                        <p class="animated wow fadeInLeft slower">II, Manipulation, we achieved high-extinction electro-optic modulation via a cascaded Mach–Zehnder interferometer [Opt. Lett. 44, 1265-1268 (2019)]. For linear and nonlinear circuits, we developed ultra-efficient optical frequency conversion devices [OSA Continuum 1, 229-242 (2018), Optica 6, 1244-1245 (2019)]. For high fidelity quantum computing, we first-time observed Quantum Zeno effect on chip [Sci Rep 7, 14831 (2017)], which paves the way for manipulation and interaction of photons without decoherence.</p>
-                                        <p class="animated wow fadeInRight slower">III, Detection, we are upgrading our system to four-channel Superconducting Nanowire Single Photon Detector (SNSPD, ID281) with up to 90% efficiency. </p>
-                                        <p class="animated wow fadeIn slower">With continuous advancement of our quantum technology, deterministic, room-temperature, scalable nonlinear photonic quantum computing will be made possible in the near future</p>
+                                        <p class="animated wow fadeInLeft slower">At Quest, we create room-temperature quantum processing with single photons as qubits chips using mainly thin-film lithium niobate on insulator. 
+                                            A single chip will contain quantum-state generation and manipulation, and eventually 
+                                             detection as well. The current team effort is focused on increasing the photon-photon interaction strength, where further minimizing the loss. </p>
+                                        <p class="animated wow fadeInRight slower">I. Generation: we generated high-purity photon pairs in periodical poled lithium niobate nanowaveguides [OSA Continuum 2, 2914-2924 (2019)].</p>
+                                        <p class="animated wow fadeInLeft slower">II. Manipulation: we achieved high-extinction electro-optic modulation via a cascaded Mach–Zehnder interferometer [Opt. Lett. 44, 1265-1268 (2019)].
+                                             For linear and nonlinear circuits, we developed ultra-efficient optical frequency conversion devices
+                                              [OSA Continuum 1, 229-242 (2018), Optica 6, 1244-1245 (2019)].
+                                               For high fidelity quantum computing, we first-time observed Quantum Zeno effect on chip
+                                         [Sci Rep 7, 14831 (2017)], which paves the way for manipulation and interaction of 
+                                         photons without decoherence. </p>
+                                        <p class="animated wow fadeInRight slower">III. Detection, we are upgrading our system to four-channel Superconducting Nanowire Single Photon Detector (SNSPD, ID281) with up to 90% efficiency. </p>
+                                        <p class="animated wow fadeIn slower">With continuous advancement of our quantum technology, deterministic, room-temperature, scalable nonlinear photonic quantum processors will be possible in the near future</p>
                                     </div>
                                 </div>
                                 <div class="container">
