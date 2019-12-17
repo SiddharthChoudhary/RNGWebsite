@@ -60,7 +60,12 @@ class Qrng extends Component{
                                             </div>
                                             <div class="animated wow fadeInRight slower col-sm-6">
                                             <h1>Quantum Random Number Generation</h1>
-                                            <p class="">QuEST quantum random number generator (QRNG) exploits pure randomness based on measuring the arrival time of single photons. This method utilizes inherently random quantum mechanical processes whose fundamentally unpredictable nature. Photon temporal waveforms are shaped using electro-optical modulator (EOM) to provide arbitrary probability distributions. QuEST QRNG is implemented on monolithic integrated photonics chip including lithium niobate PPLN waveguide, EOM, and beamsplitters. Digital data is acquired by Time-to-Digital converter via Zynq FPGA.</p>
+                                            <p class="">QuEST quantum random number generators
+                                                 exploit inherent randomness with the quantum states of single and entangled photons, with physics-gauranteed 
+                                                 security and trustworthiness. Distinctly, those numbers pass all randomness tests without additional postprocessing
+                                                 and can be generated in customized statistical properties by photon electro-optical shaping. 
+                                                 We have developed fully enclosed, battery powered systems consisting of RF, Laser, Si-APD, integrated photonics chips 
+                                                 (nonlinear waveguide + EOM + beamsplitters+...), Time-to-Digital converter via Zynq FPGA, and user interface.</p>
                                             </div>
                                         </div>
                                     </div>
