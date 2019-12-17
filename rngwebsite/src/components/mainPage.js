@@ -82,7 +82,7 @@ class MainPage extends Component{
       <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
               <div class="mx-auto text-center">
-                <h2 className="heading">Laboratory For Quantum Enhanced Systems and Technology</h2>
+                <h2 className="heading">Laboratory for Quantum Enhanced Systems and Technology</h2>
                 <p></p>
                 {/* <a href="#research" class="btn btn-primary js-scroll-trigger">Get Started</a> */}
               </div>
@@ -94,42 +94,42 @@ class MainPage extends Component{
                         <img src="img/res/biomedic2.png" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption>
                             <h1 class="font-size-80-px">QUANTUM BIOMEDIC IMAGING</h1>
-                            <Link to="/biomedic">Read More</Link>
+                            <Link class="font-size-only-xx-large" to="/biomedic">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                         <img src="img/res/qrng.png" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption>
                             <h3 class="font-size-80-px">QUANTUM RANDOM NUMBERS</h3>
-                            <Link to="/qrng">Read More</Link>
+                            <Link class="font-size-only-xx-large" to="/qrng">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                         <img src="img/ipad.jpg" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption>
                             <h3 class="font-size-80-px">INTEGRATED QUANTUM PHOTONICS</h3>
-                            <Link to="/photonics">Read More</Link>
+                            <Link  class="font-size-only-xx-large" to="/photonics">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/res/remote_sensing_1.jpg" class="max-min-width-img-60" alt=""/>
+                        <img src="img/res/remote_sensing_3.jpg" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption>
                             <h3 class="font-size-80-px">QUANTUM REMOTE SENSING</h3>
-                            <Link to="/remotesensing">Read More</Link>
+                            <Link class="font-size-only-xx-large"  to="/remotesensing">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                         <img src="img/res/iot_3.png" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption>
                             <h3 class="font-size-80-px">QUANTUM COMPUTING AND IOT</h3>
-                            <Link to="/iot">Read More</Link>
+                            <Link class="font-size-only-xx-large"  to="/iot">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                         <img src="img/res/Online.png" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption>
                             <h3 class="font-size-80-px">QUANTUM OPTICAL COMPUTING</h3>
-                            <Link to="/optical">Read More</Link>
+                            <Link  class="font-size-only-xx-large" to="/optical">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
                   </Carousel>
