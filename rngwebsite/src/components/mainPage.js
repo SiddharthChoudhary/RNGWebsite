@@ -7,6 +7,12 @@ class MainPage extends Component{
     constructor(){
         super()
         this.research = React.createRef()  
+        this.bioMedical = React.createRef()  
+        this.qrng = React.createRef()  
+        this.photonics = React.createRef()  
+        this.sensing = React.createRef()  
+        this.iot = React.createRef()  
+        this.computing = React.createRef()  
         this.team = React.createRef()  
         this.opportunities = React.createRef()  
         this.aboutus = React.createRef()  
@@ -60,8 +66,17 @@ class MainPage extends Component{
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger nav-items" onClick={()=>this.scrollToMyRef(this.research)}>Research Projects</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle js-scroll-trigger nav-items" id="navbarDropdown"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onClick={()=>this.scrollToMyRef(this.research)}>Research Projects</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/#biomedic" onClick={()=>this.scrollToMyRef(this.bioMedical)}>BioMedical Imaging</a>
+              <a class="dropdown-item" href="/#qrng">Quantum Random Numbers</a>
+              <a class="dropdown-item" href="/#photonics" >Integrated Quantum Photonics</a>
+              <a class="dropdown-item" href="/#remotesensing" onClick={()=>this.scrollToMyRef(this.sensing)} >Quantum Remote Sensing</a>
+              <a class="dropdown-item" href="/#iot" onClick={()=>this.scrollToMyRef(this.iot)} >Quantum Computing and IOT</a>
+              <a class="dropdown-item" href="/#optical" onClick={()=>this.scrollToMyRef(this.computing)} >Quantum Optical Computing</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" onClick={()=>this.scrollToMyRef(this.team)}>Team</a>
@@ -89,45 +104,45 @@ class MainPage extends Component{
             </div>
           </header>
       <section ref={this.research} id="research" class="d-flex h-100 research-section text-center" /* style={{marginTop: '5px'}} */>
-                  <Carousel id="research">
-                        <Carousel.Item>
+                  <Carousel id="research" indicators={true} pauseOnHover={true}>
+                        <Carousel.Item id="bioMedic">
                         <img src="img/res/biomedic2.png" class="max-min-width-img-60" alt=""/>
-                          <Carousel.Caption>
+                          <Carousel.Caption ref={this.bioMedical}>
                             <h1 class="font-size-80-px">QUANTUM BIOMEDIC IMAGING</h1>
                             <Link class="font-size-only-xx-large" to="/biomedic">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
-                        <Carousel.Item>
+                        <Carousel.Item id="qrng" ref={this.qrng}>
                         <img src="img/res/qrng.png" class="max-min-width-img-60" alt=""/>
-                          <Carousel.Caption>
+                          <Carousel.Caption >
                             <h3 class="font-size-80-px">QUANTUM RANDOM NUMBERS</h3>
                             <Link class="font-size-only-xx-large" to="/qrng">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                         <img src="img/ipad.jpg" class="max-min-width-img-60" alt=""/>
-                          <Carousel.Caption>
+                          <Carousel.Caption ref={this.photonics}>
                             <h3 class="font-size-80-px">INTEGRATED QUANTUM PHOTONICS</h3>
                             <Link  class="font-size-only-xx-large" to="/photonics">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                         <img src="img/res/remote_sensing_3.jpg" class="max-min-width-img-60" alt=""/>
-                          <Carousel.Caption>
+                          <Carousel.Caption ref={this.sensing}>
                             <h3 class="font-size-80-px">QUANTUM REMOTE SENSING</h3>
                             <Link class="font-size-only-xx-large"  to="/remotesensing">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                         <img src="img/res/iot_3.png" class="max-min-width-img-60" alt=""/>
-                          <Carousel.Caption>
+                          <Carousel.Caption ref={this.iot}>
                             <h3 class="font-size-80-px">QUANTUM COMPUTING AND IOT</h3>
                             <Link class="font-size-only-xx-large"  to="/iot">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                         <img src="img/res/Online.png" class="max-min-width-img-60" alt=""/>
-                          <Carousel.Caption>
+                          <Carousel.Caption ref={this.computing} >
                             <h3 class="font-size-80-px">QUANTUM OPTICAL COMPUTING</h3>
                             <Link  class="font-size-only-xx-large" to="/optical">Read More</Link>
                           </Carousel.Caption>
@@ -208,15 +223,15 @@ class MainPage extends Component{
           <h4 class="color-white">Apply Now by sending an email to yhuang5@stevens.edu</h4>
       </div>
       <div class="social d-flex justify-content-center">
-      <a href="#" class="mx-2">
+      {/* <a href="#" class="mx-2">
         <i class="fab fa-twitter"></i>
-      </a>
-      <a href="#" class="mx-2">
+      </a> */}
+      {/* <a href="#" class="mx-2">
         <i class="fab fa-facebook-f"></i>
       </a>
       <a href="#" class="mx-2">
         <i class="fab fa-github"></i>
-      </a>
+      </a> */}
       </div>
 
       </div>

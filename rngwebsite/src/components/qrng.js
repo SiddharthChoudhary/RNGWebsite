@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import {Button,Modal} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router,Route,Link} from 'react-router-dom'
+import NavBar from '../components/subComponents/NavBar'
 
 import '../index.css'
 // import Modal from './modal'
@@ -26,33 +27,11 @@ class Qrng extends Component{
         let body;
         body = (          
             <section id="qrng">
-                 <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top">
-                    <a class="navbar-brand js-scroll-trigger" href="/">
-                        <img class="mx-auto max-width-height-300" src={"img/logo.png"}></img>
-                    </a>
-                    <div class="container">
-                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        Menu
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger nav-items font-color-black" onClick={()=>this.scrollToMyRef(this.uniform)}>Uniform</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger font-color-black" onClick={()=>this.scrollToMyRef(this.normal)}>Normal</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger font-color-black" onClick={()=>this.scrollToMyRef(this.arbitrary)}>Arbitrary</a>
-                        </li>
-                        </ul>
-                    </div>
-                    </div>
-                </nav>
+                
+                    <NavBar/>
                     {/* <div class="row mb-5"></div> */}
                     <div class="padding-60  margin-top-100 " >
-                                <div class="container width-height-100vw-100vh text-align-center">
+                                <div class="container text-align-center">
                                     <div class="row margin-100-100"></div>
                                     <div class="row " id="photonic">
                                             <div class=" animated wow fadeInLeft slower col-sm-6">
@@ -75,12 +54,12 @@ class Qrng extends Component{
                                     <div ref={this.uniform} class="row " id="uniform">
                                             <div class="animated wow fadeInRight slower col-sm-12">  
                                                 <h1>Uniform Distribution</h1>
-                                                <p class=" mb-0">Uniform QRNs is created by switching off RF pulses. Each photon is equally likely to be detected in any bin over a period of a reference signal, thus creating high-dimensional, uniform RNs. Entropy estimation: <span class="">0.9987 per bit.</span> </p>
+                                                <p class="mb-0">Uniform QRNs is created by switching off RF pulses. Each photon is equally likely to be detected in any bin over a period of a reference signal, thus creating high-dimensional, uniform RNs. Entropy estimation: <span class="">0.9987 per bit.</span> </p>
                                                 <p class="">Randomness tests: <a href="https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-22r1a.pdf"> NIST SP 800-22 </a>  and R. G. Brown, D. Eddelbuettel, and D. Bauer Dieharder<a href="http://www.phy.duke.edu/rgb/General/dieharder.php">: &nbsp; A Random Number Test Suite</a> </p>
                                             </div>
                                     </div>
                                     <div><div class="animated wow fadeInLeft slower col-sm-12 text-align-center">
-                                                <Button variant="dark"><Link to="/uniform">Uniform</Link></Button>
+                                                <Button variant="dark"><Link to="/uniform">Get Uniform Distribution</Link></Button>
                                             </div></div>
                                 </div>
                                 <div class="container text-align-center">
@@ -93,7 +72,7 @@ class Qrng extends Component{
                                     </div>
                                     <div>
                                     <div class=" animated wow fadeInLeft slower col-sm-12">
-                                                <Button variant="dark"><Link to="/normal">Normal</Link></Button>
+                                                <Button variant="dark"><Link to="/normal">Get Normal Distribution</Link></Button>
                                     </div>
                                     </div>
                                 </div>
@@ -107,7 +86,7 @@ class Qrng extends Component{
                                     </div>
                                     <div>
                                     <div class=" animated wow fadeInLeft slower col-sm-12">
-                                                <Button variant="dark"><Link to="/arbitrary">Arbitrary</Link></Button>
+                                                <Button variant="dark"><Link to="/arbitrary">Get Arbitrary Distribution</Link></Button>
                                             </div>
                                     </div>
                                     <div class="row margin-top">

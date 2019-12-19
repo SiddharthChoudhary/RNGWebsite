@@ -74,37 +74,17 @@ class Normal extends Component{
                     </div>
                 </nav>
                 <div class="container margin-top-100">
-                <div class="row justify-content-center no-gutters">
-                    <div class="col-lg-6">
-                    <img class="img-fluid" src="img/demo-image-02.jpg" alt=""/>
-                    </div>
-                    <div class="col-lg-6 order-lg-first">
-                    <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                        <div class="project-text w-100 my-auto text-center text-lg-right">
-                            <h4 class="text-white">Normal Distribution</h4>
-                            <p class="mb-0 ">A description explaining that how the api works and what is Normal Distribution all about</p>
-                            <hr class="d-none d-lg-block mb-0 mr-0"/>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
+                
                 <div class="row margin-top mb-5 justify-content-center">
-                    <div>
-                    <Button variant="dark">1.0</Button>
-                    </div>
-                    <div>
-                    </div>
                 </div>
-                <div class="row team-section ">
+                <div class="row">
                         <div class="container">
                         <div class="row">
-                             <div class="container">
+                             <div class="container width-height-100vw-100vh">
                     <div class="row align-items-center no-gutters mb-4 mb-lg-5">
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                        <h4>API</h4> <p class="animated bounce infinite"><Link onClick={()=>this.showModal(this.state.show)}>TryNow</Link></p>
+                        <h4>API</h4> <p class="animated bounce once"><Link onClick={()=>this.showModal(this.state.show)}>TryNow</Link></p>
                         <p class=" mb-0">http://quest.phy.stevens.edu:5050/normalDistribution</p>
                         <Modal show={this.state.show} onHide={()=>this.hideModal(this.state.show)}>
                         <Modal.Header closeButton>

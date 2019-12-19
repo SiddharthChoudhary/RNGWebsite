@@ -125,8 +125,6 @@
     font-size: 1.60rem;
     line-height: 2.5rem;
     color:white;
-    border: 2px solid white;
-    border-radius: 5px;
     -webkit-background-clip: text;
 }
 
@@ -425,13 +423,13 @@ border-radius: 1.25rem;
   font-size: 60px;
 }
 #OpticalComputing #mainNav, #BioMedic #mainNav, #RemoteSensing #mainNav, #IOT #mainNav, #qrng #mainNav,
-#Uniform #mainNav, #Normal #mainNav, #Arbitrary #mainNav, #team #mainNav{
+#Uniform #mainNav, #Normal #mainNav, #Arbitrary #mainNav, #team #mainNav, #NavBar #mainNav{
   padding-top: 0;
   padding-bottom: 0;
   background-color: white;
   border-bottom: none;
 }
-#OpticalComputing, #BioMedic, #RemoteSensing, #IOT, #qrng, #Arbitrary,#Normal,#Uniform,#Normal,#Arbitrary,#team{
+#OpticalComputing, #BioMedic, #RemoteSensing, #IOT, #qrng, #Arbitrary,#Normal,#Uniform,#Normal,#Arbitrary,#team, #NavBar{
   background-color: black;
   color: white;
 }

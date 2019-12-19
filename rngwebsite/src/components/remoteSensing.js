@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import {Button,Modal} from 'react-bootstrap'
+import NavBar from '../components/subComponents/NavBar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router,Route,Link} from 'react-router-dom'
 import '../index.css'
@@ -22,24 +23,8 @@ class RemoteSensing extends Component{
             <section id="RemoteSensing">
                 <link href="css/grayscale.css" rel="stylesheet"/>
                     {/* <div class="row mb-5"></div> */}
-                    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-                        <a class="navbar-brand js-scroll-trigger" href="/">
-                            <img class="mx-auto max-width-height-300" src={"img/logo.png"}></img>
-                        </a>
-                        <div class="container">
-                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                            Menu
-                            <i class="fas fa-bars"></i>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarResponsive">
-                            <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger nav-items font-color-black" onClick={()=>this.scrollToMyRef(this.RemoteSensing)}>Remote Sensing</a>
-                            </li>
-                            </ul>
-                        </div>
-                        </div>
-                    </nav>
+                    
+                    <NavBar/>
     
                     <div class="padding-60  margin-top-100">
                                 <div class="container width-height-100vw-100vh text-align-center">
