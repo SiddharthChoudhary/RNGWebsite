@@ -28,11 +28,12 @@ class IOT extends Component{
             <section id="IOT">
                 <link href="css/grayscale.css" rel="stylesheet"/>
                     {/* <div class="row mb-5"></div> */}
+                    
                     <NavBar/>
      
     
                     <div class="padding-60  margin-top-100 " >
-                                <div class="container width-height-100vw-100vh text-align-center">
+                                <div class="container text-align-center">
                                     <div class="row margin-100-100"></div>
                                     <div class="row " id="iot">
                                             <div class=" animated wow fadeInLeft slower col-sm-6">
@@ -51,7 +52,7 @@ class IOT extends Component{
                                 </div>
                                 <div class="row"><div><p></p></div><div><p></p></div><div></div><div></div></div>
                                 <div class="text-align-center"><h1>OSI LAYER</h1></div>
-                                <div class="container text-align-center font-size-only-x-large">
+                                <div class="container text-align-center">
                                     <div class="row">
                                         <p class="animated wow fadeInLeft slower">Quantum link shares one-time-pad true random keys for encryption/decryption between Quantum Gateways.</p>
                                         <p class="animated wow fadeInRight slower">Quantum Gateways act as a bridge between the IoTs devices and the world. And it is connected to Quantum link as well as the internet.</p>

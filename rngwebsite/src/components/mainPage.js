@@ -120,7 +120,7 @@ class MainPage extends Component{
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/ipad.jpg" class="max-min-width-img-60" alt=""/>
+                        <img src="img/res/photonic3.jpg" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption ref={this.photonics}>
                             <h3 class="font-size-80-px">INTEGRATED QUANTUM PHOTONICS</h3>
                             <Link  class="font-size-only-xx-large" to="/photonics">Read More</Link>

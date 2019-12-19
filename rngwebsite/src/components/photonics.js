@@ -32,7 +32,7 @@ class Photonics extends Component{
                     <NavBar/>
     
                     <div class="padding-60  margin-top-100 " >
-                                <div class="container width-height-100vw-100vh text-align-center">
+                                <div class="container  text-align-center">
                                     <div class="row margin-100-100"></div>
                                     <div class="row " id="photonic">
                                             <div class=" animated wow fadeInLeft slower col-sm-6">
@@ -44,7 +44,7 @@ class Photonics extends Component{
                                         </div>
                                     </div>
                                 </div>
-                                <div ref={this.photonic} class="container text-align-center font-size-only-x-large">
+                                <div ref={this.photonic} class="container text-align-center">
                                     <div class="row">
                                         <p class="animated wow fadeInLeft slower">At Quest, we create room-temperature quantum processing with single photons as qubits chips using mainly thin-film lithium niobate on insulator. 
                                             A single chip will contain quantum-state generation and manipulation, and eventually 
