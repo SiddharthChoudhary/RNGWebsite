@@ -37,16 +37,17 @@ class IOT extends Component{
                                     <div class="row margin-100-100"></div>
                                     <div class="row " id="iot">
                                             <div class=" animated wow fadeInLeft slower col-sm-6">
-                                                <img class="rounded-125rem thumbnail max-width-100-img" src="img/res/iot_2.png"></img>
+                                                <img class="rounded-125rem thumbnail max-width-100-img" src="img/res/iot7.jpeg"></img>
                                             </div>
                                             <div ref={this.IOT} class="animated wow fadeInRight slower col-sm-6">
-                                                <h1>QUANTUM COMPUTING and IOT</h1>
+                                                <h1>QUANTUM COMMUNICATION and IOT</h1>
                                                 <p>Quantum Internet of Things (QIoTs) is Internet of Things (IoTs)  embedding Quantum Keys Distribution (QKD). </p>
+                                                <p class="animated wow fadeIn slower">IoTs being developed on low computing power devices, does not focus on security. This raises a severe threat not only to the IoT devices, but also to all devices within the network. At QuEST lab, we utilize the unconditional randomness and entanglement of photons to secure IoTs devices from the man-in-the-middle attack by deploying our QKD system to encrypt and decrypt all information exchange between each communicating nodes on the internet.</p>
                                             </div>
                                         </div>
                                         <div class="row"></div>
                                         <div>
-                                        <p class="animated wow fadeIn slower">IoTs being developed on low computing power devices, does not focus on security. This raises a severe threat not only to the IoT devices, but also to all devices within the network. At QuEST lab, we utilize the unconditional randomness and entanglement of photons to secure IoTs devices from the man-in-the-middle attack by deploying our QKD system to encrypt and decrypt all information exchange between each communicating nodes on the internet.</p>
+                                        
                                         </div>
                                     </div>
                                 </div>

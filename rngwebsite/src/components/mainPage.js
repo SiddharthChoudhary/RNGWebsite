@@ -106,44 +106,44 @@ class MainPage extends Component{
       <section ref={this.research} id="research" class="d-flex h-100 research-section text-center" /* style={{marginTop: '5px'}} */>
                   <Carousel id="research" indicators={true} pauseOnHover={true}>
                         <Carousel.Item id="bioMedic">
-                        <img src="img/res/biomedic2.png" class="max-min-width-img-60" alt=""/>
+                        <img src="img/res/biomedic.jpg" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption ref={this.bioMedical}>
-                            <h1 class="font-size-80-px">QUANTUM BIOMEDIC IMAGING</h1>
+                            <h1 class="font-size-80-px background-transparent">QUANTUM BIOMEDICAL IMAGING</h1>
                             <Link class="font-size-only-xx-large" to="/biomedic">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item id="qrng" ref={this.qrng}>
-                        <img src="img/res/qrng.png" class="max-min-width-img-60" alt=""/>
+                        <img src="img/res/qrng3.jpg" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption >
-                            <h3 class="font-size-80-px">QUANTUM RANDOM NUMBERS</h3>
+                            <h3 class="font-size-80-px background-transparent">QUANTUM RANDOM NUMBERS</h3>
                             <Link class="font-size-only-xx-large" to="/qrng">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                         <img src="img/res/photonic3.jpg" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption ref={this.photonics}>
-                            <h3 class="font-size-80-px">INTEGRATED QUANTUM PHOTONICS</h3>
+                            <h3 class="font-size-80-px background-transparent">INTEGRATED QUANTUM PHOTONICS</h3>
                             <Link  class="font-size-only-xx-large" to="/photonics">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                         <img src="img/res/remote_sensing_3.jpg" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption ref={this.sensing}>
-                            <h3 class="font-size-80-px">QUANTUM REMOTE SENSING</h3>
+                            <h3 class="font-size-80-px background-transparent">QUANTUM REMOTE SENSING</h3>
                             <Link class="font-size-only-xx-large"  to="/remotesensing">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/res/iot_3.png" class="max-min-width-img-60" alt=""/>
+                        <img src="img/res/iot4.jpg" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption ref={this.iot}>
-                            <h3 class="font-size-80-px">QUANTUM COMPUTING AND IOT</h3>
+                            <h3 class="font-size-80-px background-transparent">QUANTUM COMMUNICATION AND IOT</h3>
                             <Link class="font-size-only-xx-large"  to="/iot">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
-                        <img src="img/res/Online.png" class="max-min-width-img-60" alt=""/>
+                        <img src="img/res/EOM_12.jpg" class="max-min-width-img-60" alt=""/>
                           <Carousel.Caption ref={this.computing} >
-                            <h3 class="font-size-80-px">QUANTUM OPTICAL COMPUTING</h3>
+                            <h3 class="font-size-80-px background-transparent">QUANTUM OPTICAL COMPUTING</h3>
                             <Link  class="font-size-only-xx-large" to="/optical">Read More</Link>
                           </Carousel.Caption>
                         </Carousel.Item>
@@ -153,7 +153,7 @@ class MainPage extends Component{
         <div class="container">
         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
           <div class="col-xl-8 col-lg-7">
-            <img class="animated wow fadeInLeft slower img-fluid mb-3 mb-lg-0" src="img/team.jpg" alt=""/>
+            <img class="animated wow fadeInLeft slower img-fluid mb-3 mb-lg-0" src="img/team2.jpg" alt=""/>
           </div>
           <div class="col-xl-4 col-lg-5">
             <div class="animated wow fadeInRight slower featured-text text-center text-lg-left text-color-white">

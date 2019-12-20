@@ -167,7 +167,7 @@
   visibility: hidden;
 }
 .max-min-width-img-60{
-  max-width: 60%;
+  max-width: 80%;
 }
 .font-size-x-large{
   font-size: x-large;
@@ -313,7 +313,7 @@
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/res/Optical_1.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/res/newsection.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -436,4 +436,8 @@ border-radius: 1.25rem;
 
 .font-size-only-xx-large{
   font-size: xx-large;
+}
+
+.background-transparent{
+  background-color: #000000ad;
 }

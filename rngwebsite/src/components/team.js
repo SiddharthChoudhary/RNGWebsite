@@ -30,11 +30,9 @@ class Team extends Component{
                 },
                 {name:'Bharathwaj Muthuswamy',
                  email:'bmuthusw@stevens.edu',
-                 description:'Dr. Bharathwaj "Bharath" Muthuswamy is currently training to be a Quantum Engineer, that is, study Quantum Mechanics with a focus on engineering Quantum behaviour, by working towards his second PhD in physics.\t\n\n'+
-
-                 'Dr. Muthuswamy has BS (2002), MS (2005) and PhD (2009) degrees in Electrical Engineering and Computer Sciences from the University of California, Berkeley.  His areas of interest are nonlinear dynamical (quantum) systems and embedded systems. More specifically, he works on quantum mechanics and reconfigurable architectures.\n'+
-                 
-                 'His Erdos number is 4: Muthuswamy, B->Chua, L.O->Boyd, S. P.->Diaconis, P. W.->Erdos, P.  His mathematical geneology goes all the way back to Carl Friedrich Gauss (and even further)! Once you get to M. E. V. Valkenburg, follow the geneology of Laurence Albert Manning.',
+                 description:'Dr. Bharathwaj "Bharath" Muthuswamy is currently training to be a Quantum Engineer, that is, study Quantum Mechanics with a focus on engineering Quantum behaviour, by working towards his second PhD in physics.\n\n',
+                 description2:'Dr. Muthuswamy has BS (2002), MS (2005) and PhD (2009) degrees in Electrical Engineering and Computer Sciences from the University of California, Berkeley.  His areas of interest are nonlinear dynamical (quantum) systems and embedded systems. More specifically, he works on quantum mechanics and reconfigurable architectures.\n',
+                 description3:'His Erdos number is 4: Muthuswamy, B->Chua, L.O->Boyd, S. P.->Diaconis, P. W.->Erdos, P.  His mathematical geneology goes all the way back to Carl Friedrich Gauss (and even further)! Once you get to M. E. V. Valkenburg, follow the geneology of Laurence Albert Manning.',
                  image:"Bharath.jpeg",
                  show:false
                 },
@@ -49,7 +47,8 @@ class Team extends Component{
                 name:'Daniel Tafone',
                 email:'dtafone@stevens.edu',
                 show:false,
-                image:"airybeam.png"
+                description:'',
+                image:"Daniel.jpg"
                 },
                 {
                     name:'He Zhang',
@@ -160,11 +159,9 @@ class Team extends Component{
                 },
                 {name: 'Yong M Sua',
                 email: 'ysua@stevens.edu',
-                description:'Dr. Yong Meng Sua obtained his Bachelor degree in Physics (2008) and Master degree in Applied Physics (2009), both from University of Malaya, Malaysia. He graduated with a Doctoral degree in Engineering Physics from Michigan Technological University in 2014.'+
-
-                'He joined QuEST since 2015 and his research interests covering a broad-range from blue-sky research to practical applications oriented development.'+
-                
-                'He also keen to nurture the next generation of quantum workforce and developing quantum technology for commercialization.',
+                description:'Dr. Yong Meng Sua obtained his Bachelor degree in Physics (2008) and Master degree in Applied Physics (2009), both from University of Malaya, Malaysia. He graduated with a Doctoral degree in Engineering Physics from Michigan Technological University in 2014.',
+                description2:'He joined QuEST since 2015 and his research interests covering a broad-range from blue-sky research to practical applications oriented development.',
+                description3:'He also keen to nurture the next generation of quantum workforce and developing quantum technology for commercialization.',
                 image:"Yong_Sua.jpg",
                 show:false
                 },
@@ -182,7 +179,8 @@ class Team extends Component{
                 {name:'Zipei Zheng',
                 email:'zzheng22@stevens.ed',
                 show:false,
-                description:'I am the new P.h.d student on training. I get my BS degree in Physics from the University of Colorado Boulder in 2019. My biggest interest in physics is light, I think it is the most mysterious thing in our universe. I love everything related to light and really want to learn more about it. But for now, I am trying to focus on quantum physics and quantum technology in order to follow the pace of modern scientists. In my spare time at home, I prefer reading, cooking and listening to music. J-pop is my favorite music genre. I also enjoy the off-road trip and fishing. ',
+                description:'I am the new P.h.d student on training. I get my BS degree in Physics from the University of Colorado Boulder in 2019.',
+                description2:'My biggest interest in physics is light, I think it is the most mysterious thing in our universe. I love everything related to light and really want to learn more about it. But for now, I am trying to focus on quantum physics and quantum technology in order to follow the pace of modern scientists. In my spare time at home, I prefer reading, cooking and listening to music. J-pop is my favorite music genre. I also enjoy the off-road trip and fishing. ',
                 image:"zipei_zheng.jpg"
                 }
             ]
@@ -218,6 +216,8 @@ class Team extends Component{
              </Modal.Header>
              <Modal.Body>
                 <p>{this.state.teamMembers[i].description?this.state.teamMembers[i].description:""}</p>
+                <p>{this.state.teamMembers[i].description2?this.state.teamMembers[i].description2:""}</p>
+                <p>{this.state.teamMembers[i].description3?this.state.teamMembers[i].description3:""}</p>
                  <p>Reach at: {this.state.teamMembers[i].email}</p>
                  </Modal.Body>
              <Modal.Footer>

@@ -31,10 +31,10 @@ class RemoteSensing extends Component{
                                     <div class="row margin-100-100"></div>
                                     <div ref={this.RemoteSensing} class="row " id="remotesensing">
                                             <div class=" animated wow fadeInLeft slower col-sm-6">
-                                                <img class="rounded-125rem thumbnail max-width-100-img" src="img/res/remote_sensing_3.png"></img>
+                                                <img class="rounded-125rem thumbnail max-width-100-img" src="img/res/remoteSensing.jpg"></img>
                                             </div>
                                             <div class="animated wow fadeInRight slower col-sm-6">
-                                                <h1>Remote Sensing</h1>
+                                                <h1 class="margin-top-100">Remote Sensing</h1>
                                             </div>
                                     </div>
                                     <div class="row margin-100-100"></div>

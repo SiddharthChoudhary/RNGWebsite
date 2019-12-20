@@ -35,7 +35,7 @@ class Qrng extends Component{
                                     <div class="row margin-100-100"></div>
                                     <div class="row " id="photonic">
                                             <div class=" animated wow fadeInLeft slower col-sm-6">
-                                                <img class="rounded-125rem thumbnail max-width-100-img" src="img/photonics.jpg"></img>
+                                                <img class="rounded-125rem thumbnail max-width-100-img" src="img/res/qrng1.jpg"></img>
                                             </div>
                                             <div class="animated wow fadeInRight slower col-sm-6">
                                             <h1>Quantum Random Number Generation</h1>
