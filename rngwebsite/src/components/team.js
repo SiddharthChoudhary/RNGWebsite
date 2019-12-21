@@ -47,7 +47,7 @@ class Team extends Component{
                 name:'Daniel Tafone',
                 email:'dtafone@stevens.edu',
                 show:false,
-                description:'',
+                description:"Daniel graduated Ramapo College of New Jersey in 2019 with a bachelor's in Engineering Physics. He joined QuEST in June of that year and is currently a PhD student at Stevens Institute of Technology.",
                 image:"Daniel.jpg"
                 },
                 {
@@ -279,13 +279,13 @@ class Team extends Component{
                             <a class="nav-link js-scroll-trigger font-color-black" href="/#team">Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger font-color-black" href="/#/news">News</a>
+                            <a class="nav-link js-scroll-trigger font-color-black" href="/#/#news">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger font-color-black" href="/#/opportunities">Opportunities</a>
+                            <a class="nav-link js-scroll-trigger font-color-black" href="/#/#opportunities">Opportunities</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger font-color-black" href="/#/about">About</a>
+                            <a class="nav-link js-scroll-trigger font-color-black" href="/#/#about">About</a>
                         </li>
                         </ul>
                     </div>
