@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {Button,Modal,InputGroup,FormControl} from 'react-bootstrap'
+import {Button,Modal,InputGroup,FormControl,Alert} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router,Route, Link} from 'react-router-dom'
 import '../../index.css'
@@ -17,6 +17,7 @@ class Normal extends Component{
             show:false,
             min:'',
             max:'',
+            error:false,
             amount:'',
             response:''
         }
@@ -25,11 +26,31 @@ class Normal extends Component{
 
     }
     handleMinChange=(e)=>{
+        if(e.target.value>100 || e.target.value < 0){
+            this.setState({
+                error:true
+            });
+            return;
+        }else{
+            this.setState({
+                error:false
+            })
+        }
         this.setState({
             min:e.target.value
         })
     }
     handleMaxChange=(e)=>{
+        if(e.target.value>100 || e.target.value < 0 || Number(e.target.value) < Number(this.state.min)){
+            this.setState({
+                error:true
+            });
+            return;
+        }else{
+            this.setState({
+                error:false
+            })
+        }
         this.setState({
             max:e.target.value
         })
@@ -72,6 +93,7 @@ class Normal extends Component{
                         <Modal.Title>Select Input</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
+                        {this.state.error ?<Alert variant='danger'>Input should be valid and limited to 100 and Maximum should not be less than minimum</Alert>:''}
                         <InputGroup className="mb-3">
                         <InputGroup.Prepend>
                         <InputGroup.Text>Min</InputGroup.Text>

@@ -35,7 +35,7 @@ class Uniform extends Component{
         })
     }
     handleMaxChange=(e)=>{
-        if(e.target.value>100 || e.target.value < 0 || e.target.value < this.state.min){
+        if(e.target.value>100 || e.target.value < 0 || Number(e.target.value) < Number(this.state.min)){
             this.setState({
                 error:true
             });
