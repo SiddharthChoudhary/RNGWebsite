@@ -4,53 +4,74 @@ import {BrowserRouter as Router,Route,Link} from 'react-router-dom'
 
 class MainPage extends Component{
 
-    constructor(){
-        super()
-        this.research = React.createRef()  
-        this.bioMedical = React.createRef()  
-        this.qrng = React.createRef()  
-        this.photonics = React.createRef()  
-        this.sensing = React.createRef()  
-        this.iot = React.createRef()  
-        this.computing = React.createRef()  
-        this.team = React.createRef()  
-        this.opportunities = React.createRef()  
-        this.aboutus = React.createRef()  
-        this.news = React.createRef()  
-
-        this.state={
-          // remember to not include / in the end because I am splitting the url based on slashes to display title
-          // for the news article on the front page
-          newsReleases:[
-            {link:"https://phys.org/news/2019-09-team-holy-grail-room-temperature.html",
-             title:"Team closes in on 'holy grail' of room temperature quantum computing chips"},
-            {link:'https://www.stevens.edu/news/stevens-just-switched-nations-first-campus-hybrid-quantum-communications-network',
-             title:"Stevens Just Switched on the Nation's First Campus Hybrid Quantum-Communications Network"},
-            {link:'https://thestute.com/2018/03/23/taking-the-tech-out-of-the-lab-stevens-unveils-quantum-communications-network',
-             title:'Stevens unveils quantum communications network'},
-            {link:'https://www.eurekalert.org/pub_releases/2018-09/siot-sqr092518.php',
-             title:"Stevens' quantum research and education piques US interest"},
-            {link:'https://www.stevens.edu/news/stevens-creates-truly-random-numbers-using-quantum-physics',
-             title:'Stevens Creates Truly Random Numbers, Using Quantum Physics'},
-            {link:'https://www.stevens.edu/news/stevens-prototype-quantum-lock-may-foreshadow-next-super-secure-applications',
-             title:"Stevens' Prototype 'Quantum Lock' May Foreshadow the Next Super-Secure Applications"}
-          ]
-        }
+  constructor(){
+    super()
+    this.research = React.createRef()  
+    this.bioMedical = React.createRef()  
+    this.qrng = React.createRef()  
+    this.photonics = React.createRef()  
+    this.sensing = React.createRef()  
+    this.iot = React.createRef()  
+    this.computing = React.createRef()  
+    this.team = React.createRef()  
+    this.opportunities = React.createRef()  
+    this.aboutus = React.createRef()  
+    this.news = React.createRef()  
+    
+    this.state={
+      // remember to not include / in the end because I am splitting the url based on slashes to display title
+      // for the news article on the front page
+      newsReleases:[
+        {link:"https://phys.org/news/2019-09-team-holy-grail-room-temperature.html",
+        title:"Team closes in on 'holy grail' of room temperature quantum computing chips"},
+        {link:'https://www.stevens.edu/news/stevens-just-switched-nations-first-campus-hybrid-quantum-communications-network',
+        title:"Stevens Just Switched on the Nation's First Campus Hybrid Quantum-Communications Network"},
+        {link:'https://thestute.com/2018/03/23/taking-the-tech-out-of-the-lab-stevens-unveils-quantum-communications-network',
+        title:'Stevens unveils quantum communications network'},
+        {link:'https://www.eurekalert.org/pub_releases/2018-09/siot-sqr092518.php',
+        title:"Stevens' quantum research and education piques US interest"},
+        {link:'https://www.stevens.edu/news/stevens-creates-truly-random-numbers-using-quantum-physics',
+        title:'Stevens Creates Truly Random Numbers, Using Quantum Physics'},
+        {link:'https://www.stevens.edu/news/stevens-prototype-quantum-lock-may-foreshadow-next-super-secure-applications',
+        title:"Stevens' Prototype 'Quantum Lock' May Foreshadow the Next Super-Secure Applications"}
+      ]
     }
-    newsReleases=()=>{
-      let div=[];
-      //this index is responsible for displaying the name of the news in main dashboard page
-      for(let i in this.state.newsReleases){
-          let lastIndexInNewsUrl=this.state.newsReleases[i].link.split("/").length
-          div.push(
-            <li class="list-group-item">
+  }
+  scrollToMyRef = (myref) => window.scrollTo(0, myref.current.offsetTop)   
+
+  componentDidMount(){
+    let url   = window.location.href;
+    let url_split_by_directives = url.split('#');
+    let reroute_to;
+    if(url_split_by_directives.length>2){
+      reroute_to = url_split_by_directives[2];
+      if(reroute_to=='team'){
+        this.scrollToMyRef(this.team)
+      }else if(reroute_to=='research'){
+        this.scrollToMyRef(this.research)
+      }else if(reroute_to=='news'){
+        this.scrollToMyRef(this.news)
+      }else if(reroute_to=='opportunities'){
+        this.scrollToMyRef(this.opportunities)
+      }else if(reroute_to=='about'){
+        this.scrollToMyRef(this.aboutus)
+      }
+      // console.log("I came in")
+    }
+  }
+  newsReleases=()=>{
+    let div=[];
+    //this index is responsible for displaying the name of the news in main dashboard page
+    for(let i in this.state.newsReleases){
+      let lastIndexInNewsUrl=this.state.newsReleases[i].link.split("/").length
+      div.push(
+        <li class="list-group-item">
               <a href={this.state.newsReleases[i].link}>{this.state.newsReleases[i].title}</a>
             </li>
             )
-        }
+          }
       return div
     }
-    scrollToMyRef = (myref) => window.scrollTo(0, myref.current.offsetTop)   
 
     render(){
         return(

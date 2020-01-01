@@ -44,16 +44,16 @@ class NavBar extends Component{
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger font-color-black" href="/">Team</a>
+                            <a class="nav-link js-scroll-trigger font-color-black" href="/#/#team">Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger font-color-black" href="/">News</a>
+                            <a class="nav-link js-scroll-trigger font-color-black" href="/#/#news">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger font-color-black" href="/">Opportunities</a>
+                            <a class="nav-link js-scroll-trigger font-color-black" href="/#/#opportunities">Opportunities</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger font-color-black" href="/">About</a>
+                            <a class="nav-link js-scroll-trigger font-color-black" href="/#/#about">About</a>
                         </li>
                         </ul>
                     </div>

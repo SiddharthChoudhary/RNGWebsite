@@ -71,6 +71,7 @@ class Normal extends Component{
         })
     }
     render(){
+        window.scrollTo(0,0)
     let body;
         body = (
             <section id="Normal">

@@ -75,6 +75,7 @@ class Uniform extends Component{
         })
     }
     render(){
+    window.scrollTo(0,0)
     let body;
         body = (
             <section id="Uniform">

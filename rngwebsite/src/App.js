@@ -19,21 +19,19 @@ function App() {
   return (
     <HashRouter basename="/">
       <Switch>
-      <ScrolltoTop>
       <div classname="App-header">
       <Route exact path="/" component={MainPage}/>
       <Route exact path="/uniform" component={uniform}/>
-      <Route exact path="/team" component={Team}/>
+      <Route exact path="/team" onUpdate={() => window.scrollTo(0, 0)} component={Team}/>
       <Route exact path="/arbitrary" component={arbitrary}/>
-      <Route exact path="/normal" component={normal}/>
-      <Route exact path="/qrng" component={qrng}/>
-      <Route exact path="/biomedic" component={BioMedic}/>
-      <Route exact path="/photonics" component={Photonics}/>
-      <Route exact path="/iot" component={IOT}/>
-      <Route exact path="/optical" component={OpticalComputing}/>
-      <Route exact path="/remotesensing" component={RemoteSensing}/>
+      <Route exact path="/normal"  component={normal}/>
+      <Route exact path="/qrng" onUpdate={() => window.scrollTo(0, 0)} component={qrng}/>
+      <Route exact path="/biomedic" onUpdate={() => window.scrollTo(0, 0)} component={BioMedic}/>
+      <Route exact path="/photonics" onUpdate={() => window.scrollTo(0, 0)} component={Photonics}/>
+      <Route exact path="/iot" onUpdate={() => window.scrollTo(0, 0)} component={IOT}/>
+      <Route exact path="/optical" onUpdate={() => window.scrollTo(0, 0)} component={OpticalComputing}/>
+      <Route exact path="/remotesensing" onUpdate={() => window.scrollTo(0, 0)} component={RemoteSensing}/>
       </div>
-      </ScrolltoTop>
       </Switch>
     </HashRouter>
   );

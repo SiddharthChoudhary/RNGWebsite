@@ -19,6 +19,7 @@ class Arbitrary extends Component{
     // const handleClose = () => setShow(false);
     render(){
         let body;
+        window.scrollTo(0,0)
         body = (
             <section id="Arbitrary">
                 <NavBar/>
