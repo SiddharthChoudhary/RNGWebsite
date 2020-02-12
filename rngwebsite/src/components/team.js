@@ -165,6 +165,15 @@ class Team extends Component{
                 image:"Yong_Sua.jpg",
                 show:false
                 },
+                {
+                name: 'Yuping Huang',
+                email:  'yuping.huang@stevens.edu',
+                description: 'Associate Professor, CQSE Director',
+                description2: 'University of Science and Technology of China, 2004, Michigan State University, 2009',
+                description3:"My research interest is with developing advanced quantum technology and systems of strong practical relevance, with focus on mass-producible, highly-intergrated, turn-key, and room-temperature quantum devices.",
+                image:"yuping.jpg",
+                show:false
+                },
                 {name:'Zhan Li',
                 email:'zli88@stevens.edu',
                 show:false,
