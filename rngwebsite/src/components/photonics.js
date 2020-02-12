@@ -46,13 +46,13 @@ class Photonics extends Component{
                                 </div>
                                 <div ref={this.photonic} class="container text-align-center">
                                     <div class="row">
-                                        <p class="animated wow fadeInLeft slower">At Quest, we create room-temperature quantum processing with single photons as qubits chips using mainly thin-film lithium niobate on insulator. 
-                                            A single chip will contain quantum-state generation and manipulation, and eventually 
-                                             detection as well. The current team effort is focused on increasing the photon-photon interaction strength, where further minimizing the loss. </p>
+                                        <p class="animated wow fadeInLeft slower">At Quest, we develop room-temperature quantum processing chips with single photons as qubits chips using thin-film lithium niobate on insulator. 
+                                            A single chip will integrate quantum-state generation, manipulation, logic gates, and eventually 
+                                             detection as well. The current team effort is focused on increasing the photon-photon interaction strength, where further minimizing the on-chip propagation loss. </p>
                                         <ol>
                                         <li class="animated wow fadeInRight slower"><p><strong>Generation</strong> We generated high-purity photon pairs in periodical poled lithium niobate nanowaveguides <a href="https://www.osapublishing.org/osac/abstract.cfm?uri=osac-2-10-2914"> OSA Continuum 2, 2914-2924 (2019)</a></p></li>
-                                        <li class="animated wow fadeInLeft slower"><p><strong>Manipulation</strong> 
-                                         We achieved high-extinction electro-optic modulation via a cascaded Mach–Zehnder interferometer <a href="https://www.osapublishing.org/ol/abstract.cfm?uri=ol-44-5-1265">Opt. Lett. 44, 1265-1268 (2019)</a>
+                                        <li class="animated wow fadeInLeft slower"><p><strong>Manipulation</strong>. 
+                                         We achieved high-extinction electro-optic modulation via a cascaded Mach–Zehnder interferometer <a href="https://www.osapublishing.org/ol/abstract.cfm?uri=ol-44-5-1265">Opt. Lett. 44, 1265-1268 (2019)</a>. 
                                         For linear and nonlinear circuits, we developed ultra-efficient optical frequency conversion devices <a href="https://www.osapublishing.org/osac/abstract.cfm?uri=osac-1-1-229"> OSA Continuum 1, 229-242 (2018)</a>
                                                For high fidelity quantum computing, we first-time observed Quantum Zeno effect on chip
                                          <a href="https://www.nature.com/articles/s41598-017-13327-x#citeas"> [Sci Rep 7, 14831 (2017)]</a>, which paves the way for manipulation and interaction of 

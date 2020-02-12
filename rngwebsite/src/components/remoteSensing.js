@@ -41,7 +41,7 @@ class RemoteSensing extends Component{
                                     <div class="row ">
                                         <p class="animated wow fadeInLeft slower">Light detection and ranging (LiDAR) has become a versatile tool for many remote sensing applications including 3-dimensional mapping, autonomous navigation, and environmental monitoring. </p>
                                         <p class="animated wow fadeInRight slower">The operating principle of any active LiDAR system is to use the returning optical probe signal to gain information about the target scene. Difficulty arises in remote sensing applications where the returning probe signal is weak and returns along with strong background noise.</p>
-                                        <p class="animated wow fadeInLeft slower">Such extreme operating conditions leave conventional LiDAR approaches ineffective. We aim to extend the limit on what can be remotely sensed using our Quantum Enhanced LiDAR system that has demonstrated outstanding performance in signal isolation and background suppression.</p>
+                                        <p class="animated wow fadeInLeft slower">Such extreme operating conditions render conventional LiDAR approaches ineffective. We aim to extend the limit on what can be remotely sensed using our photonic LiDAR systems based on quantum parametric mode sorting, which has demonstrated outstanding performance in signal isolation, background suppression, and rejection of multiscattering noise.</p>
                                     </div>
                                     </div>
                                 </div>

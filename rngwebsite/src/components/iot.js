@@ -41,7 +41,7 @@ class IOT extends Component{
                                             </div>
                                             <div ref={this.IOT} class="animated wow fadeInRight slower col-sm-6">
                                                 <h1>QUANTUM COMMUNICATION and IOT</h1>
-                                                <p>Quantum Internet of Things (QIoTs) is Internet of Things (IoTs)  embedding Quantum Keys Distribution (QKD). </p>
+                                                <p>Quantum Internet of Things (QIoTs) is the next generation Internet of Things (IoTs)  incorporating Quantum Keys Distribution (QKD). </p>
                                                 <p class="animated wow fadeIn slower">IoTs being developed on low computing power devices, does not focus on security. This raises a severe threat not only to the IoT devices, but also to all devices within the network. At QuEST lab, we utilize the unconditional randomness and entanglement of photons to secure IoTs devices from the man-in-the-middle attack by deploying our QKD system to encrypt and decrypt all information exchange between each communicating nodes on the internet.</p>
                                             </div>
                                         </div>
@@ -52,7 +52,7 @@ class IOT extends Component{
                                     </div>
                                 </div>
                                 <div class="row"><div><p></p></div><div><p></p></div><div></div><div></div></div>
-                                <div class="text-align-center"><h1>OSI LAYER</h1></div>
+                                
                                 <div class="container text-align-center">
                                     <div class="row">
                                         <p class="animated wow fadeInLeft slower">Quantum link shares one-time-pad true random keys for encryption/decryption between Quantum Gateways.</p>

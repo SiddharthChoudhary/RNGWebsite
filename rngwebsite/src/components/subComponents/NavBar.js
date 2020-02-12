@@ -39,7 +39,7 @@ class NavBar extends Component{
                             <a class="dropdown-item" href="/#qrng">Quantum Random Numbers</a>
                             <a class="dropdown-item" href="/#photonics" >Integrated Quantum Photonics</a>
                             <a class="dropdown-item" href="/#remotesensing" >Quantum Remote Sensing</a>
-                            <a class="dropdown-item" href="/#iot" >Quantum Computing and IOT</a>
+                            <a class="dropdown-item" href="/#iot" >Quantum Communication and IOT</a>
                             <a class="dropdown-item" href="/#optical" >Quantum Optical Computing</a>
                             </div>
                         </li>
