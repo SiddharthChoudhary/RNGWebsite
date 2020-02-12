@@ -129,7 +129,7 @@ class Uniform extends Component{
                                         onChange={this.handleAmountChange}
                                         />
                                         </InputGroup>
-                                        <a href={"http://35.192.39.81:5050/main?lower=0"+this.state.min+"&higher="+ this.state.max+"&amount="+this.state.amount}><Button>Try It</Button></a>
+                                        <a href={"https://exalted-iridium-265519.appspot.com/main?lower=0"+this.state.min+"&higher="+ this.state.max+"&amount="+this.state.amount}><Button>Try It</Button></a>
                                         <div>
                                         </div>
                                         </Modal.Body>
